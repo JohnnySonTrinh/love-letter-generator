@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 :root{
     --dark-red:#250408;
     --red:#880D1E;
@@ -5,11 +8,71 @@
     --pink: #F26A8D;
     --light-pink: #F49CBB;
     --light-blue: #CBEEF3;
-    --white: #EEFAFB;    
+    --white: #EEFAFB; 
+    
+    overflow: hidden;
+}
+
+/* welcome block */
+.welcome{
+  background-color: var(--light-pink);
+  font-family: 'Abril Fatface';
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & .btn {
+    border-color: var(--dark-red);
+    border-radius: 1vw 0 1vw 0;
+    border: 0.25rem solid;
+    background-color: var(--white);
+
+    height:clamp(6rem, 10%, 10rem);
+    width:clamp(6rem, 10%, 10rem);
+
+    
+    &:hover{
+      height:calc(clamp(6rem, 10%, 10rem)*1.1);
+      width:calc(clamp(6rem, 10%, 10rem)*1.1);
+      transition: height 100ms,
+                  width 100ms;
+    }
+
+    &::before{
+      position: absolute;
+      transform: rotate(315deg);
+      font-size: clamp(2rem, 10%, 10rem);
+      translate: -75% -75%;
+      content: "the luuurrrrrve generator";
+
+      animation-name: GrowShrink;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate ;
+    }
+  }
+
+  & h1{
+    font-family: 'Abril Fatface';
+  }
+}
+
+/* scroll snap effect */
+html, body, section {
+  block-size: 100%;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 /**Footer*/
-
 footer {
     position: fixed;
     bottom: 0;
@@ -31,7 +94,7 @@ footer {
     & a {
       text-decoration: none;
       text-transform: uppercase;
-      color: var(--light);
+      color: var(--white);
     }
   
     /* Hover effects */
@@ -71,4 +134,10 @@ footer {
     & li:has(+ li:hover)::after {
       translate: 100%;
     }
+  }
+
+  /* animations */
+  @keyframes GrowShrink{
+    0% {scale:1;}
+    100%{scale:1.4; }
   }
