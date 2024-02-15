@@ -3,6 +3,14 @@
 # love-letter-generator
 Generate your very own love letter for your loved ones.
 
+## Contents
+
+* [Surface](#surface)
+  * [Fonts](#fonts)
+  * [Color Palette](#color-palette)
+* [Design](#design)
+* [Deployment](#deployment)
+
 
 ## Surface
 ### Fonts
