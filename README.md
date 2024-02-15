@@ -15,6 +15,10 @@ Body: Montserrat
 #CBEEF3
 #EEFAFB
 
+<div align="center">
+  <img src="./assets/readme-images/colour-pallette.png" alt="Colour Pallette">
+</div>
+
 
 
 ## Design
