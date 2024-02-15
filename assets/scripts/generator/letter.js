@@ -1,25 +1,27 @@
 document.getElementById('loveLetterForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form submission
+  event.preventDefault(); // Prevent form submission
 
-    // Collect user input
-    const name = document.getElementById('name').value;
-    const crush = document.getElementById('crush').value;
-    const reason = document.getElementById('reason').value;
-    const gift = document.getElementById('gift').value;
-    const date = document.getElementById('date').value;
+  // Collect user input
+  const partnerName = document.getElementById('partnerName').value;
+  const noun1 = document.getElementById('noun1').value;
+  const noun2 = document.getElementById('noun2').value;
+  const eyeColor = document.getElementById('eyeColor').value;
+  const adjective1 = document.getElementById('adjective1').value;
+  const adjective2 = document.getElementById('adjective2').value;
+  const yourName = document.getElementById('yourName').value;
 
-    // Generate the letter
-    const letter = `Dear ${crush},
+  // Generate the letter
+  const letter = `My dearest ${partnerName},
 
-    I've been thinking a lot about us and how much I enjoy our time together. One thing that stands out to me is ${reason}. It's something that makes you incredibly special to me.
+  Whenever I think of you, my heart swells with joy. Your eyes, as ${eyeColor} as the deep ocean, remind me of the serenity of a calm sea. They are like ${noun1}, full of life and beauty.
 
-    I've been wanting to show you how much I care, so I've decided to give you ${gift} as a token of my affection. I hope it brings a smile to your face.
+  You possess a ${adjective1} spirit that lights up any room and a ${adjective2} heart that shows your true kindness. It's the way that you care about the little things, like ${noun2}, that makes me love you even more.
 
-    Let's make a plan to spend some quality time together on ${date}. I'm looking forward to creating more beautiful memories with you.
+  Every moment with you is a treasure, and I look forward to making countless more memories together.
 
-    With all my love,
-    ${name}`;
+  All my love,
+  ${yourName}`;
 
-    // Display the letter
-    document.getElementById('letterOutput').innerText = letter;
-  });
+  // Display the letter
+  document.getElementById('letterOutput').innerText = letter;
+});
