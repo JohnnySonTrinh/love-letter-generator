@@ -5,11 +5,14 @@ Generate your very own love letter for your loved ones.
 
 ## Contents
 
-* [Surface](#surface)
-  * [Fonts](#fonts)
-  * [Color Palette](#color-palette)
-* [Design](#design)
-* [Deployment](#deployment)
+- [love-letter-generator](#love-letter-generator)
+  - [Contents](#contents)
+  - [Surface](#surface)
+    - [Fonts](#fonts)
+    - [Color Palette](#color-palette)
+  - [Design](#design)
+  - [Deployment](#deployment)
+  - [Technologies Used](#technologies-used)
 
 
 ## Surface
@@ -35,7 +38,10 @@ Body: Montserrat
 
 The UX design was made in balsamiq. See the wireframes [here](assets/PDF/LoveLetterGenerator.pdf)
 
-
 ## Deployment
 
 This page was deployed using [github pages](https://pages.github.com/)
+
+## Technologies Used
+
+- The favicon was generated with [Favicon Generator](https://favicon.io/favicon-converter/)
