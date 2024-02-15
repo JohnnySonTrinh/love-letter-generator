@@ -26,7 +26,7 @@
     <!--Main-->
     <div>
       <h1>Love Letter Generator</h1>
-    <form action="loveletter.php" method="post">
+    <form id="loveLetterForm">
       <label for="name">Your Name:</label>
       <input type="text" name="name" id="name" required>
       <br>
@@ -44,8 +44,11 @@
       <br>
       <input type="submit" value="Generate">
     </form>
+    <div id="letterOutput"></div>
   </div>
+
     <!--Scripts-->
-    <script></script>
+    <script src="assets/scripts/generator/letter.js"></script>
+
 </body>
 </html>
