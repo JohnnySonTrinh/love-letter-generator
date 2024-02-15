@@ -24,3 +24,7 @@ Body: Montserrat
 ## Design
 
 The UX design was made in balsamiq. See the wireframes [here](assets/PDF/LoveLetterGenerator.pdf)
+
+## Technologies Used
+
+- The favicon was generated with [Favicon Generator](https://favicon.io/favicon-converter/)
