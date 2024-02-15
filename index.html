@@ -25,30 +25,35 @@
 
     <!--Main-->
     <div>
-      <h1>Love Letter Generator</h1>
-    <form action="loveletter.php" method="post">
-      <label for="name">Your Name:</label>
-      <input type="text" name="name" id="name" required>
-      <br>
-      <label for="crush">Crush's Name:</label>
-      <input type="text" name="crush" id="crush" required>
-      <br>
-      <label for="reason">Reason:</label>
-      <input type="text" name="reason" id="reason" required>
-      <br>
-      <label for="gift">Gift:</label>
-      <input type="text" name="gift" id="gift" required>
-      <br>
-      <label for="date">Date:</label>
-      <input type="date" name="date" id="date" required>
-      <br>
-      <input type="submit" value="Generate">
-    </form>
-  </div>
-  <footer>
-    
-  </footer>
+        <h1>Love Letter Generator</h1>
+        <form id="loveLetterForm">
+          <label for="partnerName">Partner's Name:</label>
+          <input type="text" name="partnerName" id="partnerName" required>
+          <br>
+          <label for="noun1">Noun One:</label>
+          <input type="text" name="noun1" id="noun1" required>
+          <br>
+          <label for="noun2">Noun Two:</label>
+          <input type="text" name="noun2" id="noun2" required>
+          <br>
+          <label for="eyeColor">Eye Colour:</label>
+          <input type="text" name="eyeColor" id="eyeColor" required>
+          <br>
+          <label for="adjective1">Adjective One:</label>
+          <input type="text" name="adjective1" id="adjective1" required>
+          <br>
+          <label for="adjective2">Adjective Two:</label>
+          <input type="text" name="adjective2" id="adjective2" required>
+          <br>
+          <label for="yourName">Your Name:</label>
+          <input type="text" name="yourName" id="yourName" required>
+          <br>
+          <input type="submit" value="Generate">
+        </form>
+        <div id="letterOutput"></div>
+      </div>
     <!--Scripts-->
-    <script></script>
+    <script src="assets/scripts/generator/letter.js"></script>
+
 </body>
 </html>
