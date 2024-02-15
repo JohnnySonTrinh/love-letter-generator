@@ -71,6 +71,43 @@ section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
+body {
+  background-color: var(--light-pink);
+}
+
+/**Header*/
+
+header {
+  width: 100%;
+  line-height: 0.3rem;
+  text-transform: uppercase;
+  
+  & a {
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  & a:hover {
+    text-decoration: none;
+    color: var(--white) !important;
+  }
+  
+  & li {
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    padding: 0.3rem;
+  }
+  & li:hover {
+    background-color: var(--dark-red);
+    color: var(--white) !important;
+  }
+}
+
+.active {
+  background-color: var(--dark-red);
+  color: var(--white) !important;
+}
 
 /**Footer*/
 footer {
