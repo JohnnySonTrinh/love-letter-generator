@@ -1,6 +1,7 @@
 # love-letter-generator
 Generate you very own love letter for your loved ones.
 
+
 ## Surface
 ### Fonts
 Titles: Abril Fatface
@@ -13,3 +14,9 @@ Body: Montserrat
 #F49CBB
 #CBEEF3
 #EEFAFB
+
+
+
+## Design
+
+The UX design was made in balsamiq. See the wireframes [here](assets/PDF/LoveLetterGenerator.pdf)
