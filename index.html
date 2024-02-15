@@ -25,7 +25,7 @@
     </header>
 
     <!--Main-->
-    <div>
+    <div class="container">
         <h1>Love Letter Generator</h1>
         <form id="loveLetterForm">
           <label for="partnerName">Partner's Name:</label>
@@ -33,18 +33,22 @@
           <br>
           <label for="noun1">Noun One:</label>
           <input type="text" name="noun1" id="noun1" required>
+          <button type="button" id="randomizeNoun1"><i class="fa fa-dice"></i></i></i></button>
           <br>
           <label for="noun2">Noun Two:</label>
           <input type="text" name="noun2" id="noun2" required>
+          <button type="button" id="randomizeNoun2"><i class="fa fa-dice"></i></button>
           <br>
           <label for="eyeColor">Eye Colour:</label>
           <input type="text" name="eyeColor" id="eyeColor" required>
           <br>
           <label for="adjective1">Adjective One:</label>
           <input type="text" name="adjective1" id="adjective1" required>
+          <button type="button" id="randomizeAdjective1"><i class="fa fa-dice"></i></button>
           <br>
           <label for="adjective2">Adjective Two:</label>
           <input type="text" name="adjective2" id="adjective2" required>
+          <button type="button" id="randomizeAdjective2"><i class="fa fa-dice"></i></button>
           <br>
           <label for="yourName">Your Name:</label>
           <input type="text" name="yourName" id="yourName" required>
@@ -52,7 +56,7 @@
           <input type="submit" value="Generate">
         </form>
         <div id="letterOutput"></div>
-      </div>
+    </div>
 
       <!--footer -->
     <footer class="footer">
