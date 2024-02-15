@@ -1,4 +1,4 @@
-document.getElementById('loveLetterForm').addEventListener('submit', function(event) {
+document.getElementById('loveLetterForm').addEventListener('submit', (event) => {
   event.preventDefault(); // Prevent form submission
 
   // Collect user input
@@ -24,4 +24,37 @@ document.getElementById('loveLetterForm').addEventListener('submit', function(ev
 
   // Display the letter
   document.getElementById('letterOutput').innerText = letter;
+});
+
+// Function to randomize words
+const randomizeWord = (inputId, wordType) => {
+  // Valentine-themed nouns
+  const nouns = [
+    "heart", "rose", "cupid", "chocolate", "love", "kiss", "valentine", "passion",
+    "arrow", "candle", "hug", "date", "promise", "flame", "jewel", "gift", "song",
+    "poem", "dream", "whisper"
+  ];
+  // Valentine-themed adjectives
+  const adjectives = [
+    "loving", "romantic", "passionate", "sweet", "adorable", "charming", "affectionate", "tender",
+    "warm", "gentle", "joyful", "radiant", "magical", "enchanting", "alluring", "breathtaking",
+    "devoted", "elegant", "graceful", "precious"
+  ];
+  let randomWord;
+
+  if (wordType === 'noun') {
+    randomWord = nouns[Math.floor(Math.random() * nouns.length)];
+  } else if (wordType === 'adjective') {
+    randomWord = adjectives[Math.floor(Math.random() * adjectives.length)];
+  }
+
+  document.getElementById(inputId).value = randomWord;
+};
+
+// Attach event listeners to buttons for randomizing using arrow functions
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('randomizeNoun1').addEventListener('click', () => randomizeWord('noun1', 'noun'));
+  document.getElementById('randomizeNoun2').addEventListener('click', () => randomizeWord('noun2', 'noun'));
+  document.getElementById('randomizeAdjective1').addEventListener('click', () => randomizeWord('adjective1', 'adjective'));
+  document.getElementById('randomizeAdjective2').addEventListener('click', () => randomizeWord('adjective2', 'adjective'));
 });
