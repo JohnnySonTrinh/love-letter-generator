@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
 <body>
+  <section id ="contact-main" class="main">
   <header>
   <!--Navbar-->
     <nav class="navbar navbar-expand-md p-0">
@@ -24,8 +25,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link active" aria-current="page" aria-label="Home" href="index.html">Home</a>
+            <li class="nav-item">
+              <a class="nav-link" aria-label="Home" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-label="New Letter" href="#">New Letter</a>
@@ -33,14 +34,14 @@
             <li class="nav-item">
               <a class="nav-link" aria-label="About" href="#">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-label="Contact Us" href="#">Contact Us</a>
+            <li class="nav-item active">
+              <a class="nav-link active" aria-current="page" aria-label="Contact Us" href="contact.html">Contact Us</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-  </header>
+</header>
 
   <section id="form-section">
   <div class="container">
@@ -53,11 +54,13 @@
             <input type="email" id="contact-email" placeholder="e.g. name@example.com" required>
             <label for="contact-message">Message</label>
             <input type="text-area" id="contact-message" placeholder="Let us know your thoughts..." required>
+            <input class="btn" type="submit" value="Submit">
         </form>
       </div>
     </div>
   </div>
   </section>
+</section>
 
 
   <footer class="footer">
