@@ -9,9 +9,11 @@ document.getElementById('loveLetterForm').addEventListener('submit', (event) => 
   const adjective1 = document.getElementById('adjective1').value;
   const adjective2 = document.getElementById('adjective2').value;
   const yourName = document.getElementById('yourName').value;
+  const letterType = document.getElementById('letter-type').value;
 
-  // Generate the letter
-  const letter = `My dearest ${partnerName},
+  // Generate the letter according to type
+  // Platonic letter
+  const platonicLetter = `My dearest ${partnerName},
 
   Whenever I think of you, my heart swells with joy. Your eyes, as ${eyeColor} as the deep ocean, remind me of the serenity of a calm sea. They are like ${noun1}, full of life and beauty.
 
@@ -22,9 +24,64 @@ document.getElementById('loveLetterForm').addEventListener('submit', (event) => 
   All my love,
   ${yourName}`;
 
-  // Display the letter
-  document.getElementById('letterOutput').innerText = letter;
+  // Romantic letter
+  const romanticLetter = `My Dearest ${partnerName},
+  
+  As I sit down to write this ${adjective1} letter, my heart overflows with love and admiration for you. From the moment our eyes met, I knew there was something special about you. Your ${eyeColor} eyes captivated me, drawing me in with their warmth and depth.
 
+  Every day spent with you feels like a dream come true. Your ${noun1} fills my life with joy, laughter, and boundless happiness. I cherish the moments we share together, whether we're exploring new adventures or simply basking in each other's company.
+
+  Your kindness, compassion, and unwavering support mean more to me than words can express. You are my ${noun2}, my confidant, and my ${adjective2} love. With you by my side, I feel invincible, ready to take on the world and conquer any obstacle that comes our way.
+
+  I am grateful for the love we share, and I promise to cherish and honor it for eternity. You are the light of my life, the beat of my heart, and the one I want to spend forever with.
+
+  Forever and always,
+  ${yourName}`
+
+  // Polyamorous letter
+  const polyamorousLetter = `My Dearest ${partnerName},
+
+  With each passing day, my heart overflows with gratitude for the love and connection we share. The bond we've formed, woven together by trust, ${noun1}, and affection, is a testament to the beauty of polyamory and the depth of our collective love.
+
+  Each of you brings a unique light into my life, illuminating our journey with warmth and tenderness. Together, we navigate love's complexities with grace and compassion, embracing our polyamorous relationship with open hearts and minds.
+
+  Your love is a beacon of light in my ${adjective1} moments and a source of strength through life's challenges. Every shared moment, whether intimate, conversational, or simply spent in each other's company, is a cherished gift. Your eyes, as ${eyeColor} as the sky remind me of the serenity of a calm sea.
+
+  As we continue to explore our ${noun2}, I'm filled with excitement for the adventures ahead. Together, we create a space where every voice is heard, every heart is valued, and every love is celebrated without reservation.
+
+  My heart belongs to each of you, bound by our shared experiences and the depth of our affection. With you by my side, I am whole, complete, and endlessly grateful for the privilege of sharing this journey with such ${adjective2} souls.
+
+  With all my love and devotion,
+  ${yourName}`
+
+  // Monogamous letter
+  const monogamousLetter = `My Dearest ${partnerName},
+
+  As I sit down to write this ${adjective1} letter, my heart overflows with love and ${noun1} for you. From the moment we met, I knew that you were the one I had been waiting for, my one true love.
+  
+  Every day spent by your side fills my life with joy, happiness, and a sense of completeness that I have never known before. Your presence brings warmth to my soul, and your love brightens even the darkest of days.
+  
+  In your ${eyeColor} eyes, I see a reflection of our shared dreams, hopes, and aspirations. You are my confidant, my rock, and my greatest ${noun2}. With you, I feel safe, cherished, and truly loved.
+  
+  Your love is a gift that I treasure above all else. It is the foundation upon which we build our ${adjective2} life together, a bond that grows stronger with each passing moment. I am grateful for every laugh we share, every tear we shed, and every memory we create together.
+  
+  As we journey through life hand in hand, I am filled with excitement for the future that awaits us. With you by my side, I know that anything is possible. You are my everything, my heart, and my soul.
+  
+  Forever and always,
+  ${yourName}`
+
+  // Display the letter
+  const letterOutput = document.getElementById('letterOutput');
+
+  if (letterType === 'Platonic') {
+    letterOutput.innerText = platonicLetter;
+  } else if (letterType === 'Romantic') {
+    letterOutput.innerText = romanticLetter;
+  } else if (letterType === 'Polyamorous') {
+    letterOutput.innerText = polyamorousLetter;
+  } else {
+    letterOutput.innerText = monogamousLetter;
+  }
   //reset the form fields
   reset();
 });
