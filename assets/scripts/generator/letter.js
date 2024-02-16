@@ -1,5 +1,5 @@
 document.getElementById('loveLetterForm').addEventListener('submit', (event) => {
-  event.preventDefault(); // Prevent form submission
+  event.preventDefault(),scroll(); // Prevent form submission and scroll
 
   // Collect user input
   const partnerName = document.getElementById('partnerName').value;
@@ -27,6 +27,7 @@ document.getElementById('loveLetterForm').addEventListener('submit', (event) => 
 
   //reset the form fields
   reset();
+
 });
 
 // Function to randomize words
@@ -70,4 +71,12 @@ function reset(){
     fields[field].value = "";
    }
 
+}
+
+//scroll function
+welcomeBtn = document.getElementById("welcome-btn");
+welcomeBtn.addEventListener("click",scroll)
+
+function scroll(){
+    window.scrollBy(0,200)
 }
