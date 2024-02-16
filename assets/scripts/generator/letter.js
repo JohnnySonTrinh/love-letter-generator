@@ -24,6 +24,9 @@ document.getElementById('loveLetterForm').addEventListener('submit', (event) => 
 
   // Display the letter
   document.getElementById('letterOutput').innerText = letter;
+
+  //reset the form fields
+  reset();
 });
 
 // Function to randomize words
@@ -58,3 +61,13 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('randomizeAdjective1').addEventListener('click', () => randomizeWord('adjective1', 'adjective'));
   document.getElementById('randomizeAdjective2').addEventListener('click', () => randomizeWord('adjective2', 'adjective'));
 });
+
+//reset function
+function reset(){
+   let fields = [partnerName, noun1, noun2, eyeColor, adjective1, adjective2, yourName];
+
+   for (field in fields){
+    fields[field].value = "";
+   }
+
+}
