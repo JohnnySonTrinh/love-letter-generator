@@ -2,14 +2,16 @@ document.getElementById('loveLetterForm').addEventListener('submit', (event) => 
   event.preventDefault(),scroll(); // Prevent form submission and scroll
 
   // Collect user input
-  const partnerName = document.getElementById('partnerName').value;
-  const noun1 = document.getElementById('noun1').value;
-  const noun2 = document.getElementById('noun2').value;
-  const eyeColor = document.getElementById('eyeColor').value;
-  const adjective1 = document.getElementById('adjective1').value;
-  const adjective2 = document.getElementById('adjective2').value;
-  const yourName = document.getElementById('yourName').value;
-  const letterType = document.getElementById('letter-type').value;
+  const partnerName = capitalize(document.getElementById('partnerName').value);
+  const noun1 = document.getElementById('noun1').value.toLowerCase();
+  const noun2 = document.getElementById('noun2').value.toLowerCase();
+  const eyeColor = document.getElementById('eyeColor').value.toLowerCase();
+  const adjective1 = document.getElementById('adjective1').value.toLowerCase();
+  const adjective2 = document.getElementById('adjective2').value.toLowerCase();
+  const yourName = capitalize(document.getElementById('yourName').value);
+  const letterType = document.getElementById('letter-type').value.toLowerCase();
+
+
 
   // Generate the letter according to type
   // Platonic letter
@@ -136,4 +138,14 @@ welcomeBtn.addEventListener("click",scroll)
 
 function scroll(){
     window.scrollBy(0,200)
+}
+
+//Capitalise function for your and partner name
+function capitalize(str) {
+  // Check if the input is a valid string
+  if (typeof str !== 'string' || str.length === 0) {
+    return str;
+  }
+  // Capitalize the first letter and concatenate the rest of the string
+  return str.charAt(0).toUpperCase() + str.slice(1);
 }
