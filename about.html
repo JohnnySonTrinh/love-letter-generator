@@ -12,6 +12,7 @@
   <!--Styles-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/CSS/style.css">
+  <link rel="stylesheet" href="assets/CSS/about.css">
 </head>
 <body>
   <header>
@@ -42,48 +43,35 @@
   </header>
 
     <!--Main-->
-    <div class="container">
-        <h1>Love Letter Generator</h1>
-        <form id="loveLetterForm">
-          <fieldset id="type">
-            <label for="letter-type">Letter Type</label>
-            <select name="letter-type" id="letter-type">
-              <option value="Platonic">Platonic</option>
-              <option value="Romantic">Romantic</option>
-              <option value="Monogamous">Monogamous</option>
-              <option value="Polyamourous">Polyamourous</option>
-            </select>
-          </fieldset>
-          <fieldset id="main-form">
-            <label for="partnerName">Partner's Name:</label>
-          <input type="text" name="partnerName" id="partnerName" required>
-          <br>
-          <label for="noun1">Noun One:</label>
-          <input type="text" name="noun1" id="noun1" required>
-          <button type="button" id="randomizeNoun1"><i class="fa fa-dice"></i></i></i></button>
-          <br>
-          <label for="noun2">Noun Two:</label>
-          <input type="text" name="noun2" id="noun2" required>
-          <button type="button" id="randomizeNoun2"><i class="fa fa-dice"></i></button>
-          <br>
-          <label for="eyeColor">Eye Colour:</label>
-          <input type="text" name="eyeColor" id="eyeColor" required>
-          <br>
-          <label for="adjective1">Adjective One:</label>
-          <input type="text" name="adjective1" id="adjective1" required>
-          <button type="button" id="randomizeAdjective1"><i class="fa fa-dice"></i></button>
-          <br>
-          <label for="adjective2">Adjective Two:</label>
-          <input type="text" name="adjective2" id="adjective2" required>
-          <button type="button" id="randomizeAdjective2"><i class="fa fa-dice"></i></button>
-          <br>
-          <label for="yourName">Your Name:</label>
-          <input type="text" name="yourName" id="yourName" required>
-          <br>
-          <input type="submit" value="Generate">
-          </fieldset>
-        </form>
-        <div id="letterOutput"></div>
+    <div class="card-swiper">
+      <div class="card-groups">
+          <div class="card-team">
+          <div class="big-card card"></div>
+          <div class="big-card card"></div>
+          <div class="big-card card"></div>
+          <div class="big-card card"></div>
+          <div class="big-card card"></div>
+        </div>
+        <div class="swipe-group">
+          <div class="big-card card"></div>
+          <div class="big-card card"></div>
+          <div class="big-card card"></div>
+          <div class="big-card card"></div>
+          <div class="little-card card"></div>
+          <div class="little-card card"></div>
+        </div>
+      </div>
+      <div class="card-swiper-buttons">
+        <button id="start-swipe">
+            <i class="fa-solid fa-heart"></i>
+        </button>
+        <button id="hate-button">
+        <i class="fa-solid fa-arrow-left"></i>
+        </button>
+        <button id="love-button">
+        <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
     </div>
 
       <!--footer -->
@@ -117,7 +105,7 @@
     <!-- Font Awesome Script -->
     <script src="https://kit.fontawesome.com/668de150a5.js" crossorigin="anonymous"></script>
 
-    <script src="assets/scripts/generator/letter.js"></script>
+    <script src="test/test.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
