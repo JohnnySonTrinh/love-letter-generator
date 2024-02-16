@@ -2,6 +2,12 @@
 
 
 :root{
+
+/* Fonts */
+    --title: "Abril Fatface", serif;
+    --main-font: "Montserrat", sans-serif;
+
+/* Colors */
     --dark-red:#250408;
     --red:#880D1E;
     --light-red: #DD2D4A;
@@ -11,6 +17,18 @@
     --white: #EEFAFB; 
     
     overflow: hidden;
+}
+
+/* General styles */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--title);
+  color: var(--dark-red);
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--dark-red)
 }
 
 /* welcome block */
@@ -38,7 +56,6 @@
     }
   }
 
-
 /* main block */
 .main{
   background-color: var(--light-red);
@@ -58,6 +75,35 @@ section {
   scroll-snap-stop: always;
 }
 
+/* Form styles */
+
+fieldset > div {
+  margin-bottom: 10px;
+}
+
+fieldset > div > label {
+  width: 80%;
+}
+
+fieldset > div > input {
+  width: 80%
+}
+
+.card {
+ background-color: var(--light-blue);
+ border-color: var(--dark-red);
+ border-radius: 25% 0 25% 0;
+ border: 0.25rem solid;
+ width: 80%;
+ align-items: center;
+}
+
+#generate-btn {
+  font-family: var(--title);
+  font-size: x-large;
+  padding: 5px;
+}
+
 /* Button styling */
 .btn {
   border-color: var(--dark-red);
@@ -67,19 +113,19 @@ section {
 
   font-size: clamp(2rem, 2vw, 5rem);;
 
-  height:clamp(10rem, 10%, 20rem);
-  width:clamp(10rem, 10%, 20rem);
+  height: clamp(10rem, 10%, 20rem);
+  width: clamp(10rem, 10%, 20rem);
 
   transition: height 100ms,
                width 100ms;
 
-  &:hover{
+  &:hover {
     border-color: var(--dark-red);
     border-radius: 25% 0 25% 0;
     border: 0.25rem solid;
     background-color: var(--white);
-    height:calc(clamp(10rem, 10%, 20rem)*1.1);
-    width:calc(clamp(10rem, 10%, 20rem)*1.1);
+    height: calc(clamp(10rem, 10%, 20rem)*1.1);
+    width: calc(clamp(10rem, 10%, 20rem)*1.1);
     transition: height 100ms,
                 width 100ms;
   &:active{
