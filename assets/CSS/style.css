@@ -132,7 +132,7 @@ footer {
     padding-block: 0.5rem;
   
     & ul {
-      --_gap: 2rem;
+      --_gap: 1rem;
       width: 100%;
     }
   
