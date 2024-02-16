@@ -39,7 +39,7 @@ document.getElementById('loveLetterForm').addEventListener('submit', (event) => 
   ${yourName}`
 
   // Polyamorous letter
-  const polyamorousLetter = `My Dearest ${partnerName},
+  const polyamourousLetter = `My Dearest ${partnerName},
 
   With each passing day, my heart overflows with gratitude for the love and connection we share. The bond we've formed, woven together by trust, ${noun1}, and affection, is a testament to the beauty of polyamory and the depth of our collective love.
 
@@ -77,8 +77,8 @@ document.getElementById('loveLetterForm').addEventListener('submit', (event) => 
     letterOutput.innerText = platonicLetter;
   } else if (letterType === 'Romantic') {
     letterOutput.innerText = romanticLetter;
-  } else if (letterType === 'Polyamorous') {
-    letterOutput.innerText = polyamorousLetter;
+  } else if (letterType === 'Polyamourous') {
+    letterOutput.innerText = polyamourousLetter;
   } else {
     letterOutput.innerText = monogamousLetter;
   }
