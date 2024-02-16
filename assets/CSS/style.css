@@ -56,7 +56,6 @@ body {
     }
   }
 
-
 /* main block */
 .main{
   background-color: var(--light-red);
@@ -82,9 +81,12 @@ fieldset > div {
   margin-bottom: 10px;
 }
 
+fieldset > div > label {
+  width: 80%;
+}
+
 fieldset > div > input {
-  margin-left: 5px;
-  width: 50%
+  width: 80%
 }
 
 .card {
@@ -92,6 +94,8 @@ fieldset > div > input {
  border-color: var(--dark-red);
  border-radius: 25% 0 25% 0;
  border: 0.25rem solid;
+ width: 80%;
+ align-items: center;
 }
 
 #generate-btn {

@@ -54,8 +54,8 @@
         <form id="loveLetterForm">
           <fieldset id="type"
           class="input-container pt-3">
-            <label for="letter-type">Letter Type</label>
-            <select name="letter-type" id="letter-type" class="p-1">
+            <label for="letter-type">Letter Type:</label>
+            <select name="letter-type" id="letter-type" class="p-1 m-2">
               <option value="Platonic">Platonic</option>
               <option value="Romantic">Romantic</option>
               <option value="Monogamous">Monogamous</option>
@@ -68,12 +68,12 @@
               <input type="text" name="partnerName" id="partnerName" required>
             </div>
             <div>
-              <label for="noun1">Noun:</label>
+              <label for="noun1">Noun 1:</label>
               <input type="text" name="noun1" id="noun1" required>
               <button type="button" id="randomizeNoun1"><i class="fa fa-dice"></i></i></i></button>
             </div>
             <div>
-              <label for="noun2">Noun:</label>
+              <label for="noun2">Noun 2:</label>
               <input type="text" name="noun2" id="noun2" required>
               <button type="button" id="randomizeNoun2"><i class="fa fa-dice"></i></button>
             </div>
@@ -82,12 +82,12 @@
               <input type="text" name="eyeColor" id="eyeColor" required>
             </div>
             <div>
-              <label for="adjective1">Adjective:</label>
+              <label for="adjective1">Adjective 1:</label>
               <input type="text" name="adjective1" id="adjective1" required>
               <button type="button" id="randomizeAdjective1"><i class="fa fa-dice"></i></button>
             </div>
             <div>
-              <label for="adjective2">Adjective:</label>
+              <label for="adjective2">Adjective 2:</label>
               <input type="text" name="adjective2" id="adjective2" required>
               <button type="button" id="randomizeAdjective2"><i class="fa fa-dice"></i></button>
             </div>
@@ -100,7 +100,9 @@
           </fieldset>
         </form>
       </div>
-      <div id="letterOutput" class="card mt-5 p-5"></div>
+      <div id="letterOutput" class="card mt-5 p-5">
+        <h2>Your Letter...</h2>
+      </div>
     </div>
 
       <!--footer -->
