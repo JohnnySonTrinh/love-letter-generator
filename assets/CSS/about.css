@@ -4,7 +4,7 @@
     --light-red: #DD2D4A;
     --pink: #F26A8D;
     --light-pink: #F49CBB;
-    --light-blue: #42dcf0;
+    --light-blue: #CBEEF3;
     --white: #EEFAFB;
     --black: #000000;
 }
@@ -15,6 +15,40 @@ body {
     display: grid;
     place-items: center;
 }
+
+/**Header*/
+
+header {
+    width: 100%;
+    line-height: 0.3rem;
+    text-transform: uppercase;
+    
+    & a {
+      text-decoration: none;
+      color: var(--white);
+    }
+  
+    & a:hover {
+      text-decoration: none;
+      color: var(--white) !important;
+    }
+    
+    & li {
+      border: 1px solid black;
+      background-color: white;
+      box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+      padding: 0.3rem;
+    }
+    & li:hover {
+      background-color: var(--dark-red);
+      color: var(--white) !important;
+    }
+  }
+  
+  .active {
+    background-color: var(--dark-red);
+    color: var(--white) !important;
+  }
 
 /* Card Team */
 .card-groups,
@@ -64,7 +98,7 @@ body {
 }
 
 .little-card:nth-child(5) {
-    background: var(--light-blue) url(../images/linkedin.png) center/cover no-repeat;
+    background: var(--light-pink) url(../images/linkedin.png) center/cover no-repeat;
 }
 
 .little-card:nth-child(6) {
@@ -72,27 +106,27 @@ body {
 }
 
 .big-card:nth-child(1) {
-    background-color: var(--light-pink);
+    background: url(../images/cupidangle1.png) center/cover no-repeat;
     transform: translateX(-10%) rotate(-1deg);
 }
 
 .big-card:nth-child(2) {
-    background-color: var(--pink);
+    background: url(../images/cupidangle2.png) center/cover no-repeat;
     transform: rotate(2deg);
 }
 
 .big-card:nth-child(3) {
-    background-color: var(--light-red);
+    background: url(../images/cupidangle1.png) center/cover no-repeat;
     transform: translateX(-6%) rotate(-3deg);
 }
 
 .big-card:nth-child(4) {
-    background-color: var(--red);
+    background: url(../images/cupidangle2.png) center/cover no-repeat;
     transform: translate(10%, 3%) rotate(5deg);
 }
 
 .big-card:nth-child(5) {
-    background-color: var(--black);
+    background: url(../images/cupidangle1.png) center/cover no-repeat;
     transform: translateX(5%) rotate(3deg);
 }
   
@@ -176,16 +210,16 @@ body {
     cursor: pointer;
 }
 
-#hate-button, #love-button, .swipe-group {
+#left-button, #right-button, .swipe-group {
   display: none;
 }
 
-#start-swipe, #love-button {
-    color: var(--light-blue);
-    border-color: var(--light-blue);
+#start-swipe, #right-button {
+    color: var(--light-pink);
+    border-color: var(--light-pink);
 }
 
-#hate-button {
+#left-button {
     color: var(--white);
     border-color: var(--white);
 }
@@ -218,3 +252,73 @@ body {
         width: 4rem;
     }
 }
+
+/**Footer*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--dark-red);
+    color: var(--white);
+    line-height: 1.5rem;
+    padding-block: 0.5rem;
+  
+    & ul {
+      --_gap: 2rem;
+      width: 100%;
+    }
+  
+    & li {
+      padding-inline: 1rem;
+    }
+  
+    & a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+  
+    /* Hover effects */
+    & li {
+      padding-inline: calc(var(--_gap) / 2);
+      position: relative;
+      opacity: 0.7;
+      overflow: hidden;
+    }
+  
+    & li:hover {
+      opacity: 1;
+    }
+  
+    & li::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      width: 100%;
+      background-color: var(--light-pink);
+  
+      scale: 0 1;
+      transition: scale 250ms, translate 300ms;
+    }
+  
+    & li:hover::after {
+      scale: 1 1;
+    }
+  
+    /* Hover effect left to right */
+    & li:hover + li::after {
+      translate: -100%;
+    }
+  
+    & li:has(+ li:hover)::after {
+      translate: 100%;
+    }
+  }
+
+  /* animations */
+  @keyframes GrowShrink{
+    0% {scale:1;}
+    100%{scale:1.4; }
+  }
