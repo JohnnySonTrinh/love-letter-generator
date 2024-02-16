@@ -2,13 +2,13 @@ document.getElementById('loveLetterForm').addEventListener('submit', (event) => 
   event.preventDefault(),scroll(); // Prevent form submission and scroll
 
   // Collect user input
-  const partnerName = capitalize(document.getElementById('partnerName').value);
+  const partnerName = capitalize(document.getElementById('partnerName').value.toLowerCase());
   const noun1 = document.getElementById('noun1').value.toLowerCase();
   const noun2 = document.getElementById('noun2').value.toLowerCase();
   const eyeColor = document.getElementById('eyeColor').value.toLowerCase();
   const adjective1 = document.getElementById('adjective1').value.toLowerCase();
   const adjective2 = document.getElementById('adjective2').value.toLowerCase();
-  const yourName = capitalize(document.getElementById('yourName').value);
+  const yourName = capitalize(document.getElementById('yourName').value.toLowerCase());
   const letterType = document.getElementById('letter-type').value.toLowerCase();
 
 
