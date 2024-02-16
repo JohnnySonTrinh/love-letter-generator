@@ -76,6 +76,30 @@ section {
   scroll-snap-stop: always;
 }
 
+/* Form styles */
+
+fieldset > div {
+  margin-bottom: 10px;
+}
+
+fieldset > div > input {
+  margin-left: 5px;
+  width: 50%
+}
+
+.card {
+ background-color: var(--light-blue);
+ border-color: var(--dark-red);
+ border-radius: 25% 0 25% 0;
+ border: 0.25rem solid;
+}
+
+#generate-btn {
+  font-family: var(--title);
+  font-size: x-large;
+  padding: 5px;
+}
+
 /* Button styling */
 .btn {
   border-color: var(--dark-red);
@@ -85,19 +109,19 @@ section {
 
   font-size: clamp(2rem, 2vw, 5rem);;
 
-  height:clamp(10rem, 10%, 20rem);
-  width:clamp(10rem, 10%, 20rem);
+  height: clamp(10rem, 10%, 20rem);
+  width: clamp(10rem, 10%, 20rem);
 
   transition: height 100ms,
                width 100ms;
 
-  &:hover{
+  &:hover {
     border-color: var(--dark-red);
     border-radius: 25% 0 25% 0;
     border: 0.25rem solid;
     background-color: var(--white);
-    height:calc(clamp(10rem, 10%, 20rem)*1.1);
-    width:calc(clamp(10rem, 10%, 20rem)*1.1);
+    height: calc(clamp(10rem, 10%, 20rem)*1.1);
+    width: calc(clamp(10rem, 10%, 20rem)*1.1);
     transition: height 100ms,
                 width 100ms;
   &:active{
