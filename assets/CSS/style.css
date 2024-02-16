@@ -23,29 +23,7 @@
   align-items: center;
   justify-content: center;
 
-  & .btn {
-    border-color: var(--dark-red);
-    border-radius: 25% 0 25% 0;
-    border: 0.25rem solid;
-    background-color: var(--white);
-
-    font-size: clamp(2rem, 2vw, 5rem);;
-
-    height:clamp(10rem, 10%, 20rem);
-    width:clamp(10rem, 10%, 20rem);
-
-    transition: height 100ms,
-                 width 100ms;
-
-    
-    &:hover{
-      height:calc(clamp(10rem, 10%, 20rem)*1.1);
-      width:calc(clamp(10rem, 10%, 20rem)*1.1);
-      transition: height 100ms,
-                  width 100ms;
-    }
-
-    &::before{
+    & .btn::before{
       display: inline;
       position: absolute;
       transform: rotate(315deg);
@@ -60,10 +38,6 @@
     }
   }
 
-  & h1{
-    font-family: 'Abril Fatface';
-  }
-}
 
 /* main block */
 .main{
@@ -83,6 +57,35 @@ section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
+
+/* Button styling */
+.btn {
+  border-color: var(--dark-red);
+  border-radius: 25% 0 25% 0;
+  border: 0.25rem solid;
+  background-color: var(--white);
+
+  font-size: clamp(2rem, 2vw, 5rem);;
+
+  height:clamp(10rem, 10%, 20rem);
+  width:clamp(10rem, 10%, 20rem);
+
+  transition: height 100ms,
+               width 100ms;
+
+  &:hover{
+    border-color: var(--dark-red);
+    border-radius: 25% 0 25% 0;
+    border: 0.25rem solid;
+    background-color: var(--white);
+    height:calc(clamp(10rem, 10%, 20rem)*1.1);
+    width:calc(clamp(10rem, 10%, 20rem)*1.1);
+    transition: height 100ms,
+                width 100ms;
+  &:active{
+    background-color: var(--white);
+  }
+  }}
 
 /**Header*/
 
