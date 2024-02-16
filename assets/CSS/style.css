@@ -16,7 +16,6 @@
     --light-blue: #CBEEF3;
     --white: #EEFAFB; 
     
-    overflow: hidden;
 }
 
 /* General styles */
@@ -59,6 +58,15 @@ body {
 /* main block */
 .main{
   background-color: var(--light-red);
+}
+
+/* letter block */
+#letter-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--pink);
 }
 
 /* scroll snap effect */
@@ -170,20 +178,22 @@ header {
 /**Footer*/
 footer {
     position: fixed;
+    font-family: var(--main-font);
+    font-size: 0.9rem;
     bottom: 0;
     width: 100%;
     background-color: var(--dark-red);
     color: var(--white);
     line-height: 1.5rem;
-    padding-block: 0.5rem;
+    padding-block: 0.25rem;
   
     & ul {
-      --_gap: 2rem;
+      --_gap: 1rem;
       width: 100%;
     }
   
     & li {
-      padding-inline: 1rem;
+      padding-inline: 0.5rem;
     }
   
     & a {
