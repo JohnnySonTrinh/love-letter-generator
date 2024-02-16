@@ -2,6 +2,12 @@
 
 
 :root{
+
+/* Fonts */
+    --title: "Abril Fatface", serif;
+    --main-font: "Montserrat", sans-serif;
+
+/* Colors */
     --dark-red:#250408;
     --red:#880D1E;
     --light-red: #DD2D4A;
@@ -11,6 +17,18 @@
     --white: #EEFAFB; 
     
     overflow: hidden;
+}
+
+/* General styles */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--title);
+  color: var(--dark-red);
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--dark-red)
 }
 
 /* welcome block */
