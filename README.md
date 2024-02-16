@@ -57,7 +57,9 @@ Overall, primarily, we focused on completing majority of the must-haves, in late
 
 Breaking the project up into issues and essentially into tasks, assigning them to individual team members, trakcing progress in Projects was very helpful and enabled us to tackle the project quickly in managable bite-size steps.
 
-The Project tool was very benefitial for our development process, especially because we could rely on having all the relevant information in one place. 
+The Project tool was very benefitial for our development process, especially because we could rely on having all the relevant information in one place.
+
+[Project Board](./assets/readme-images/project-board.png)
 
 Back to top
 
