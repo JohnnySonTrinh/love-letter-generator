@@ -36,13 +36,13 @@ About page: ![About Page Lighthouse](assets/readme-images/lighthouse-about-page-
 | Adjective 2 Randomizer | Generates a random adjective when clicked and populates Adjective 2 input field | Clicked randomizer button | Populates adjective 2 input field with random adjective | Pass |
 | Your Name input field | Allows user to input text | Input text | Allowed text input | Pass |
 | Generate button | Generates letter if all input fields have been completed | Completed all fields and clicked Generate button | Letter generated with all fields displayed as entered | Pass |
-| Generate button | Will not allow user to proceed if Partner's Name is not entered | Tried to generate letter without inputting Partner's Name | Letter not generated an prompted to input text in the blank input field | Pass |
-| Generate button | Will not allow user to proceed if Noun 1 is not entered | Tried to generate letter without inputting Noun 1| Letter not generated an prompted to input text in the blank input field | Pass |
-| Generate button | Will not allow user to proceed if Noun 2 is not entered | Tried to generate letter without inputting Noun 2| Letter not generated an prompted to input text in the blank input field | Pass |
-| Generate button | Will not allow user to proceed if Eye Color is not entered | Tried to generate letter without inputting Eye Color| Letter not generated an prompted to input text in the blank input field | Pass |
-| Generate button | Will not allow user to proceed if Adjective 1 is not entered | Tried to generate letter without inputting Adjective 1| Letter not generated an prompted to input text in the blank input field | Pass |
-| Generate button | Will not allow user to proceed if Adjective 2 is not entered | Tried to generate letter without inputting Adjective 2| Letter not generated an prompted to input text in the blank input field | Pass |
-| Generate button | Will not allow user to proceed if Your Name is not entered | Tried to generate letter without inputting Your Name| Letter not generated an prompted to input text in the blank input field | Pass |
+| Generate button | Will not allow user to proceed if Partner's Name is not entered | Tried to generate letter without inputting Partner's Name | Letter not generated and prompted to input text in the blank input field | Pass |
+| Generate button | Will not allow user to proceed if Noun 1 is not entered | Tried to generate letter without inputting Noun 1| Letter not generated and prompted to input text in the blank input field | Pass |
+| Generate button | Will not allow user to proceed if Noun 2 is not entered | Tried to generate letter without inputting Noun 2| Letter not generated and prompted to input text in the blank input field | Pass |
+| Generate button | Will not allow user to proceed if Eye Color is not entered | Tried to generate letter without inputting Eye Color| Letter not generated and prompted to input text in the blank input field | Pass |
+| Generate button | Will not allow user to proceed if Adjective 1 is not entered | Tried to generate letter without inputting Adjective 1| Letter not generated and prompted to input text in the blank input field | Pass |
+| Generate button | Will not allow user to proceed if Adjective 2 is not entered | Tried to generate letter without inputting Adjective 2| Letter not generated and prompted to input text in the blank input field | Pass |
+| Generate button | Will not allow user to proceed if Your Name is not entered | Tried to generate letter without inputting Your Name| Letter not generated and prompted to input text in the blank input field | Pass |
 
 
 ### About page
