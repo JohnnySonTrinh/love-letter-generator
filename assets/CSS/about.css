@@ -1,0 +1,324 @@
+:root{
+    --dark-red:#250408;
+    --red:#880D1E;
+    --light-red: #DD2D4A;
+    --pink: #F26A8D;
+    --light-pink: #F49CBB;
+    --light-blue: #CBEEF3;
+    --white: #EEFAFB;
+    --black: #000000;
+}
+
+body {
+    background-color: var(--dark-red);  
+    margin: 0px;
+    display: grid;
+    place-items: center;
+}
+
+/**Header*/
+
+header {
+    width: 100%;
+    line-height: 0.3rem;
+    text-transform: uppercase;
+    
+    & a {
+      text-decoration: none;
+      color: var(--white);
+    }
+  
+    & a:hover {
+      text-decoration: none;
+      color: var(--white) !important;
+    }
+    
+    & li {
+      border: 1px solid black;
+      background-color: white;
+      box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+      padding: 0.3rem;
+    }
+    & li:hover {
+      background-color: var(--dark-red);
+      color: var(--white) !important;
+    }
+  }
+  
+  .active {
+    background-color: var(--dark-red);
+    color: var(--white) !important;
+  }
+
+/* Card Team */
+.card-groups,
+.card-team,
+.swipe-group,
+.card {
+  margin-top: 1rem;
+  aspect-ratio: 5 / 7;
+}
+
+
+.card-groups,
+.card-team,
+.swipe-group,
+.big-card {  
+    width: 10rem;
+}
+
+.card-team, .swipe-group {
+    position: absolute;
+    transition: transform 400ms ease;
+}
+
+
+.card {
+    background-color: rgba(255, 255, 255, 0.05);
+    position: absolute;
+    transition: transform 800ms cubic-bezier(.05,.43,.25,.95);
+    background-position: center;
+    background-size: cover;
+}
+
+.big-card {
+    border-radius: 0.3rem;
+    z-index: 2;
+}
+
+.little-card {
+    width: 3rem;
+    border-radius: 0.3rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: -1vmin 1vmin 2vmin rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.little-card:nth-child(5) {
+    background: var(--light-pink) url(../images/linkedin.png) center/cover no-repeat;
+}
+
+.little-card:nth-child(6) {
+    background: var(--white) url(../images/github.png) center/cover;
+}
+
+.big-card:nth-child(1) {
+    background: url(../images/cupidangle1.png) center/cover no-repeat;
+    transform: translateX(-10%) rotate(-1deg);
+}
+
+.big-card:nth-child(2) {
+    background: url(../images/cupidangle2.png) center/cover no-repeat;
+    transform: rotate(2deg);
+}
+
+.big-card:nth-child(3) {
+    background: url(../images/cupidangle1.png) center/cover no-repeat;
+    transform: translateX(-6%) rotate(-3deg);
+}
+
+.big-card:nth-child(4) {
+    background: url(../images/cupidangle2.png) center/cover no-repeat;
+    transform: translate(10%, 3%) rotate(5deg);
+}
+
+.big-card:nth-child(5) {
+    background: url(../images/cupidangle1.png) center/cover no-repeat;
+    transform: translateX(5%) rotate(3deg);
+}
+  
+/* Hover effect Team */  
+.card-team:hover > .card {  
+    box-shadow: -1rem 0.5rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.card-team:hover > .big-card:nth-child(1) {
+    transform: translate(-75%, 16%) rotate(-24deg);
+}
+
+.card-team:hover > .big-card:nth-child(2) {
+    transform: translate(-50%, 12%) rotate(-16deg);
+}
+
+.card-team:hover > .big-card:nth-child(3) {
+    transform: translate(0%, 8%) rotate(0deg);
+}
+
+.card-team:hover > .big-card:nth-child(4) {
+    transform: translate(50%, 12%) rotate(16deg);
+}
+
+.card-team:hover > .big-card:nth-child(5) {
+    transform: translate(75%, 16%) rotate(24deg);
+}
+
+/* Hover effect Swipe */
+.swipe-group:hover > .big-card:nth-child(1) {
+    transform: translate(-75%, 16%) rotate(-24deg);
+    z-index: 1;
+}
+
+.swipe-group:hover > .big-card:nth-child(2) {
+    transform: translate(-25%, 8%) rotate(-8deg);
+    z-index: 2;
+}
+
+.swipe-group:hover > .big-card:nth-child(3) {
+    transform: translate(25%, 8%) rotate(8deg);
+    z-index: 3;
+}
+
+.swipe-group:hover > .big-card:nth-child(4) {
+    transform: translate(75%, 16%) rotate(24deg);
+    z-index: 4;
+}
+
+.swipe-group:hover > .little-card:nth-child(5) {
+    transform: translate(240%, -160%) rotate(20deg);
+    z-index: 3;
+}
+
+.swipe-group:hover > .little-card:nth-child(6) {
+    transform: translate(-280%, 180%) rotate(-20deg);
+    z-index: 1;
+}
+
+.card-team.not-active {
+    display: none;
+}
+
+.card-swiper-buttons {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-around;  
+    padding: 0vmin 4vmin;
+}
+
+.card-swiper-buttons > button {
+    font-size: 1.5rem;
+    border: 0.4vmin solid rgb(200, 200, 200);
+    border-radius: 100%;
+    color: white;
+    background-color: transparent;
+    height: 3rem;
+    width: 3rem;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+#left-button, #right-button, .swipe-group {
+  display: none;
+}
+
+#start-swipe, #right-button {
+    color: var(--light-pink);
+    border-color: var(--light-pink);
+}
+
+#left-button {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+@media (min-width: 576px) {
+    .card-team > .card:not(:last-child) {
+        border-radius: 0.3rem;
+    }
+    .card-team>.card:not(:first-child) {
+        border-radius: 0.3rem;
+    }
+    .card-groups,
+    .card-team,
+    .big-card {  
+    width: 15rem;
+    }
+    .card-swiper-buttons > button {
+        font-size: 2rem;
+        height: 4rem;
+        width: 4rem;
+    }
+    .swipe-group:hover > .little-card:nth-child(5) {
+        transform: translate(320%, -140%) rotate(20deg);
+    }
+    
+    .swipe-group:hover > .little-card:nth-child(6) {
+        transform: translate(-260%, 240%) rotate(-20deg);
+    }
+    .little-card {
+        width: 4rem;
+    }
+}
+
+/**Footer*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--dark-red);
+    color: var(--white);
+    line-height: 1.5rem;
+    padding-block: 0.5rem;
+  
+    & ul {
+      --_gap: 2rem;
+      width: 100%;
+    }
+  
+    & li {
+      padding-inline: 1rem;
+    }
+  
+    & a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+  
+    /* Hover effects */
+    & li {
+      padding-inline: calc(var(--_gap) / 2);
+      position: relative;
+      opacity: 0.7;
+      overflow: hidden;
+    }
+  
+    & li:hover {
+      opacity: 1;
+    }
+  
+    & li::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 3px;
+      width: 100%;
+      background-color: var(--light-pink);
+  
+      scale: 0 1;
+      transition: scale 250ms, translate 300ms;
+    }
+  
+    & li:hover::after {
+      scale: 1 1;
+    }
+  
+    /* Hover effect left to right */
+    & li:hover + li::after {
+      translate: -100%;
+    }
+  
+    & li:has(+ li:hover)::after {
+      translate: 100%;
+    }
+  }
+
+  /* animations */
+  @keyframes GrowShrink{
+    0% {scale:1;}
+    100%{scale:1.4; }
+  }
