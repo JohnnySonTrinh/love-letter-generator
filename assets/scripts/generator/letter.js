@@ -2,13 +2,13 @@ document.getElementById('loveLetterForm').addEventListener('submit', (event) => 
   event.preventDefault(),scroll(); // Prevent form submission and scroll
 
   // Collect user input
-  const partnerName = capitalize(document.getElementById('partnerName').value);
+  const partnerName = capitalize(document.getElementById('partnerName').value.toLowerCase());
   const noun1 = document.getElementById('noun1').value.toLowerCase();
   const noun2 = document.getElementById('noun2').value.toLowerCase();
   const eyeColor = document.getElementById('eyeColor').value.toLowerCase();
   const adjective1 = document.getElementById('adjective1').value.toLowerCase();
   const adjective2 = document.getElementById('adjective2').value.toLowerCase();
-  const yourName = capitalize(document.getElementById('yourName').value);
+  const yourName = capitalize(document.getElementById('yourName').value.toLowerCase());
   const letterType = document.getElementById('letter-type').value.toLowerCase();
 
 
@@ -41,7 +41,7 @@ document.getElementById('loveLetterForm').addEventListener('submit', (event) => 
   ${yourName}`
 
   // Polyamorous letter
-  const polyamourousLetter = `My Dearest ${partnerName},
+  const polyamorousLetter = `My Dearest ${partnerName},
 
   With each passing day, my heart overflows with gratitude for the love and connection we share. The bond we've formed, woven together by trust, ${noun1}, and affection, is a testament to the beauty of polyamory and the depth of our collective love.
 
@@ -79,8 +79,8 @@ document.getElementById('loveLetterForm').addEventListener('submit', (event) => 
     letterOutput.innerText = platonicLetter;
   } else if (letterType === 'Romantic') {
     letterOutput.innerText = romanticLetter;
-  } else if (letterType === 'Polyamourous') {
-    letterOutput.innerText = polyamourousLetter;
+  } else if (letterType === 'Polyamorous') {
+    letterOutput.innerText = polyamorousLetter;
   } else {
     letterOutput.innerText = monogamousLetter;
   }
