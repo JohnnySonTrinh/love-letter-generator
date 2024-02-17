@@ -46,7 +46,7 @@ body {
       transform: rotate(315deg);
       font-size: clamp(2rem, 3vw, 6rem);
       translate: -75% -75%;
-      content: "the luuurrrrrve generator";
+      content: "The Love Generator";
 
       animation-name: GrowShrink;
       animation-duration: 1.5s;
