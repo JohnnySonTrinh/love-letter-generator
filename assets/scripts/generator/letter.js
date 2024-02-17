@@ -1,6 +1,46 @@
+// Identify letter type from buttons
+const platonic = document.getElementById("Platonic")
+const romantic = document.getElementById("Romantic")
+const polyamorous = document.getElementById("Polyamorous")
+const monogamous = document.getElementById("Monogamous")
+
+// Attach event listener to Submit and get letterType and buttonToHighLight
 document.getElementById('loveLetterForm').addEventListener('submit', (event) => {
   event.preventDefault(),scroll(); // Prevent form submission and scroll
+  // Collect Letter Type
+  const letterType = document.getElementById('letter-type').value;
+  const buttonToHighlight = document.getElementById(letterType);
+  generateLoveLetter(letterType);
+  highlightButton(buttonToHighlight);
+  reset();
+});
 
+// Attach event listeners to each letter type button
+platonic.addEventListener('click', () => {
+  generateLoveLetter('Platonic');
+  highlightButton(platonic);
+  reset();
+});
+
+romantic.addEventListener('click', () => {
+  generateLoveLetter('Romantic');
+  highlightButton(romantic);
+  reset();
+});
+
+polyamorous.addEventListener('click', () => {
+  generateLoveLetter('Polyamorous');
+  highlightButton(polyamorous);
+  reset();
+});
+
+monogamous.addEventListener('click', () => {
+  generateLoveLetter('Monogamous');
+  highlightButton(monogamous);
+  reset();
+});
+
+function generateLoveLetter(id) {
   // Collect user input
   const partnerName = capitalize(document.getElementById('partnerName').value.toLowerCase());
   const noun1 = document.getElementById('noun1').value.toLowerCase();
@@ -9,38 +49,8 @@ document.getElementById('loveLetterForm').addEventListener('submit', (event) => 
   const adjective1 = document.getElementById('adjective1').value.toLowerCase();
   const adjective2 = document.getElementById('adjective2').value.toLowerCase();
   const yourName = capitalize(document.getElementById('yourName').value.toLowerCase());
-  const letterType = document.getElementById('letter-type').value
 
-  // Identify letter type from buttons
-  const platonic = document.getElementById("Platonic")
-  const romantic = document.getElementById("Romantic")
-  const polyamorous = document.getElementById("Polyamorous")
-  const monogamous = document.getElementById("Monogamous")
-
-  const buttonToHighlight = document.getElementById(letterType);
-
-  // Apply a CSS style to change button's color
-  if (buttonToHighlight) {
-    buttonToHighlight.style.backgroundColor = '#250408';
-    buttonToHighlight.style.color = '#EEFAFB';
-  }
-
-  function highlightButton(id) {
-    // Reset the bg + color of all buttons
-    const buttons = document.querySelectorAll('.letter-type-button');
-    buttons.forEach(button => {
-      button.style.backgroundColor = '';
-      button.style.color = "#250408";
-    });
-
-    // Highlight the clicked button
-    const buttonToHighlight = document.getElementById(id);
-    if (buttonToHighlight) {
-      buttonToHighlight.style.backgroundColor = '#250408';
-      buttonToHighlight.style.color = '#EEFAFB';
-    }
-  }
-  // Generate the letter according to type
+  // Prepare/Generate the letter according to type
   // Platonic letter
   const platonicLetter = `My dearest ${partnerName},
 
@@ -102,52 +112,37 @@ document.getElementById('loveLetterForm').addEventListener('submit', (event) => 
   // Display the letter
   const letterOutput = document.getElementById('letterOutput');
 
-  if (letterType === 'Platonic') {
-    letterOutput.innerText = platonicLetter;
-  } else if (letterType === 'Romantic') {
-    letterOutput.innerText = romanticLetter;
-  } else if (letterType === 'Polyamorous') {
-    letterOutput.innerText = polyamorousLetter;
-  } else {
-    letterOutput.innerText = monogamousLetter;
-  }
-
-// Attach event listeners to each letter type button
-platonic.addEventListener('click', () => generateLoveLetter('Platonic'));
-romantic.addEventListener('click', () => generateLoveLetter('Romantic'));
-polyamorous.addEventListener('click', () => generateLoveLetter('Polyamorous'));
-monogamous.addEventListener('click', () => generateLoveLetter('Monogamous'));
-
-// Function to generate love letter based on the button clicked
-function generateLoveLetter(id) {
-  // Display the letter
-  const letterOutput = document.getElementById('letterOutput');
-
   // Switch statement based on letter type
   switch(id) {
-      case 'Platonic':
-          letterOutput.innerText = platonicLetter;
-          highlightButton('Platonic');
-          break;
-      case 'Romantic':
-          letterOutput.innerText = romanticLetter;
-          highlightButton('Romantic');
-          break;
-      case 'Polyamorous':
-          letterOutput.innerText = polyamorousLetter;
-          highlightButton('Polyamorous');
-          break;
-      case 'Monogamous':
-          letterOutput.innerText = monogamousLetter;
-          highlightButton('Monogamous');
-          break;
+    case 'Platonic':
+        letterOutput.innerText = platonicLetter;
+        break;
+    case 'Romantic':
+        letterOutput.innerText = romanticLetter;
+        break;
+    case 'Polyamorous':
+        letterOutput.innerText = polyamorousLetter;
+        break;
+    case 'Monogamous':
+        letterOutput.innerText = monogamousLetter;
+        break;
   }
+};
+
+function highlightButton(selectedLetterType) {
+  // Reset the bg + color of all buttons
+  const buttons = document.querySelectorAll('.letter-type-button');
+  buttons.forEach(button => {
+    button.style.backgroundColor = '';
+    button.style.color = "#250408";
+
+  // Apply a CSS style to change button's color
+  if (selectedLetterType) {
+    selectedLetterType.style.backgroundColor = '#250408';
+    selectedLetterType.style.color = '#EEFAFB';
+  }
+  });
 }
-
-  //reset the form fields
-  reset();
-
-});
 
 // Function to randomize words
 const randomizeWord = (inputId, wordType) => {
@@ -183,16 +178,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 //reset function
-function reset(){
-   let fields = [partnerName, noun1, noun2, eyeColor, adjective1, adjective2, yourName];
+function reset() {
+  let fields = [partnerName, noun1, noun2, eyeColor, adjective1, adjective2, yourName];
 
-   for (field in fields){
-    fields[field].value = "";
-   }
-
-   button.style.backgroundColor = '';
-   button.style.color = "#250408";
-
+  for (field in fields){
+   fields[field].value = "";
+  }
 }
 
 //scroll function
