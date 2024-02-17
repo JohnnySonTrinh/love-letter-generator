@@ -250,3 +250,27 @@ footer {
     0% {scale:1;}
     100%{scale:1.4; }
   }
+
+  /* Contact page */
+
+  #contact-form > div {
+    margin-bottom: 10px;
+  }
+
+  #contact-form > div > label, #contact-form > label {
+    width: 80%
+  }
+
+  #contact-form > div > input, #contact-form > input {
+    width: 80%
+  }
+
+  #contact-form > div > textarea, #contact-form > text area {
+    width: 80%
+  }
+
+  #submit-btn {
+    font-family: var(--title);
+    font-size: x-large;
+    padding: 5px;
+  }
