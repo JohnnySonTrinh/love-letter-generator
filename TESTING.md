@@ -7,9 +7,16 @@
 
 ### Lighthouse (as of 17/02/2024)
 
-Home page: ![Home Page Lighthouse](assets/readme-images/lighthouse-home-page-1702.png)
-Contact page: ![Contact Page Lighthouse](assets/readme-images/lighthouse-contact-page-1702.png)
-About page: ![About Page Lighthouse](assets/readme-images/lighthouse-about-page-1702.png)
+#### Home Page
+![Home Page Lighthouse](assets/readme-images/lighthouse-home-page-1702.png)
+
+#### Contact page
+![Contact Page Lighthouse](assets/readme-images/lighthouse-contact-page-1702.png)
+
+#### About page 
+![About Page Lighthouse](assets/readme-images/lighthouse-about-page-1702.png)
+
+### W3C
 
 ## Manual Testing
 
