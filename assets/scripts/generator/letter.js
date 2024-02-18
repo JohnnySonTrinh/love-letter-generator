@@ -8,7 +8,7 @@ const clear = document.getElementById("clear-btn")
 
 const newLetter = document.getElementById("new-letter")
 
-// Change the letter type in the form based on the currently clicek button in "Your Letter" section
+// Change the letter type in the form based on the currently click button in "Your Letter" section
 function setNewLetterTypeValue(newLetterType){
     let letterTypeInput = document.getElementById('letter-type');
     letterTypeInput.value = newLetterType;
