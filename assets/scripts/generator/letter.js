@@ -44,12 +44,13 @@ window.addEventListener('load', function() {
 
 // Attach event listener to Submit and get letterType and buttonToHighLight
 document.getElementById('loveLetterForm').addEventListener('submit', (event) => {
-  event.preventDefault(),scroll(); // Prevent form submission and scroll
+  event.preventDefault(); // Prevent form submission and scroll
   // Collect Letter Type
   const letterType = document.getElementById('letter-type').value;
   const buttonToHighlight = document.getElementById(letterType);
   generateLoveLetter(letterType);
   highlightButton(buttonToHighlight);
+  scroll("letter-section");
 });
 
 // Attach event listeners to each letter type button
@@ -244,16 +245,18 @@ function reset() {
   letterOutput.innerText = "";
 }
 
-function scroll(){
-    window.scrollBy(0,200)
+function scroll(id){
+  window.scrollTo({
+    top: document.getElementById(id).offsetTop,
+    behavior: 'smooth'
+  });
 }
 
 //scroll function and hide the Your Letter section, reset the inputs
 welcomeBtn = document.getElementById("welcome-btn");
-welcomeBtn.addEventListener("click",scroll)
 
 welcomeBtn.addEventListener('click', () => {
-  scroll();
+  scroll("main-section");
   reset();
   hideYourLetterSection();
 });
@@ -270,7 +273,7 @@ function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-//Dowload letter section
+//Download letter section
 const download = document.getElementById("download")
 const background = document.getElementById("pdfBg")
 
