@@ -151,14 +151,14 @@ fieldset > div {
 
 fieldset > div > label, fieldset > label,
 fieldset > div > input, fieldset > input {
-  width: 80%
+  width: 100%
 }
 
 .letter-output {
   padding: 10%;
 }
 
-#generate-btn, #clear-btn,
+#generate-btn, #clear-btn, #download,
 #submit-btn {
   font-family: var(--title);
   font-size: x-large;
