@@ -1,6 +1,46 @@
+// Identify letter type from buttons
+const platonic = document.getElementById("Platonic")
+const romantic = document.getElementById("Romantic")
+const polyamorous = document.getElementById("Polyamorous")
+const monogamous = document.getElementById("Monogamous")
+
+// Attach event listener to Submit and get letterType and buttonToHighLight
 document.getElementById('loveLetterForm').addEventListener('submit', (event) => {
   event.preventDefault(),scroll(); // Prevent form submission and scroll
+  // Collect Letter Type
+  const letterType = document.getElementById('letter-type').value;
+  const buttonToHighlight = document.getElementById(letterType);
+  generateLoveLetter(letterType);
+  highlightButton(buttonToHighlight);
+  reset();
+});
 
+// Attach event listeners to each letter type button
+platonic.addEventListener('click', () => {
+  generateLoveLetter('Platonic');
+  highlightButton(platonic);
+  reset();
+});
+
+romantic.addEventListener('click', () => {
+  generateLoveLetter('Romantic');
+  highlightButton(romantic);
+  reset();
+});
+
+polyamorous.addEventListener('click', () => {
+  generateLoveLetter('Polyamorous');
+  highlightButton(polyamorous);
+  reset();
+});
+
+monogamous.addEventListener('click', () => {
+  generateLoveLetter('Monogamous');
+  highlightButton(monogamous);
+  reset();
+});
+
+function generateLoveLetter(id) {
   // Collect user input
   const partnerName = capitalize(document.getElementById('partnerName').value.toLowerCase());
   const noun1 = document.getElementById('noun1').value.toLowerCase();
@@ -9,11 +49,8 @@ document.getElementById('loveLetterForm').addEventListener('submit', (event) => 
   const adjective1 = document.getElementById('adjective1').value.toLowerCase();
   const adjective2 = document.getElementById('adjective2').value.toLowerCase();
   const yourName = capitalize(document.getElementById('yourName').value.toLowerCase());
-  const letterType = document.getElementById('letter-type').value.toLowerCase();
 
-
-
-  // Generate the letter according to type
+  // Prepare/Generate the letter according to type
   // Platonic letter
   const platonicLetter = `My dearest ${partnerName},
 
@@ -27,8 +64,8 @@ document.getElementById('loveLetterForm').addEventListener('submit', (event) => 
   ${yourName}`;
 
   // Romantic letter
-  const romanticLetter = `My Dearest ${partnerName},
-  
+  const romanticLetter = `My beloved ${partnerName},
+
   As I sit down to write this ${adjective1} letter, my heart overflows with love and admiration for you. From the moment our eyes met, I knew there was something special about you. Your ${eyeColor} eyes captivated me, drawing me in with their warmth and depth.
 
   Every day spent with you feels like a dream come true. Your ${noun1} fills my life with joy, laughter, and boundless happiness. I cherish the moments we share together, whether we're exploring new adventures or simply basking in each other's company.
@@ -41,7 +78,7 @@ document.getElementById('loveLetterForm').addEventListener('submit', (event) => 
   ${yourName}`
 
   // Polyamorous letter
-  const polyamorousLetter = `My Dearest ${partnerName},
+  const polyamorousLetter = `My lovely ${partnerName},
 
   With each passing day, my heart overflows with gratitude for the love and connection we share. The bond we've formed, woven together by trust, ${noun1}, and affection, is a testament to the beauty of polyamory and the depth of our collective love.
 
@@ -57,37 +94,55 @@ document.getElementById('loveLetterForm').addEventListener('submit', (event) => 
   ${yourName}`
 
   // Monogamous letter
-  const monogamousLetter = `My Dearest ${partnerName},
+  const monogamousLetter = `My amazing ${partnerName},
 
-  As I sit down to write this ${adjective1} letter, my heart overflows with love and ${noun1} for you. From the moment we met, I knew that you were the one I had been waiting for, my one true love.
-  
+  As I embark on this ${adjective1} letter, my heart swells with an abundance of ${noun1} for you. From the moment we met, I knew that you were the one I had been waiting for, my one true love.
+
   Every day spent by your side fills my life with joy, happiness, and a sense of completeness that I have never known before. Your presence brings warmth to my soul, and your love brightens even the darkest of days.
-  
+
   In your ${eyeColor} eyes, I see a reflection of our shared dreams, hopes, and aspirations. You are my confidant, my rock, and my greatest ${noun2}. With you, I feel safe, cherished, and truly loved.
-  
+
   Your love is a gift that I treasure above all else. It is the foundation upon which we build our ${adjective2} life together, a bond that grows stronger with each passing moment. I am grateful for every laugh we share, every tear we shed, and every memory we create together.
-  
+
   As we journey through life hand in hand, I am filled with excitement for the future that awaits us. With you by my side, I know that anything is possible. You are my everything, my heart, and my soul.
-  
-  Forever and always,
+
+  Forever yours only,
   ${yourName}`
 
   // Display the letter
   const letterOutput = document.getElementById('letterOutput');
 
-  if (letterType === 'Platonic') {
-    letterOutput.innerText = platonicLetter;
-  } else if (letterType === 'Romantic') {
-    letterOutput.innerText = romanticLetter;
-  } else if (letterType === 'Polyamorous') {
-    letterOutput.innerText = polyamorousLetter;
-  } else {
-    letterOutput.innerText = monogamousLetter;
+  // Switch statement based on letter type
+  switch(id) {
+    case 'Platonic':
+        letterOutput.innerText = platonicLetter;
+        break;
+    case 'Romantic':
+        letterOutput.innerText = romanticLetter;
+        break;
+    case 'Polyamorous':
+        letterOutput.innerText = polyamorousLetter;
+        break;
+    case 'Monogamous':
+        letterOutput.innerText = monogamousLetter;
+        break;
   }
-  //reset the form fields
-  reset();
+};
 
-});
+function highlightButton(selectedLetterType) {
+  // Reset the bg + color of all buttons
+  const buttons = document.querySelectorAll('.letter-type-button');
+  buttons.forEach(button => {
+    button.style.backgroundColor = '';
+    button.style.color = "#250408";
+
+  // Apply a CSS style to change button's color
+  if (selectedLetterType) {
+    selectedLetterType.style.backgroundColor = '#250408';
+    selectedLetterType.style.color = '#EEFAFB';
+  }
+  });
+}
 
 // Function to randomize words
 const randomizeWord = (inputId, wordType) => {
@@ -123,13 +178,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 //reset function
-function reset(){
-   let fields = [partnerName, noun1, noun2, eyeColor, adjective1, adjective2, yourName];
+function reset() {
+  let fields = [partnerName, noun1, noun2, eyeColor, adjective1, adjective2, yourName];
 
-   for (field in fields){
-    fields[field].value = "";
-   }
-
+  for (field in fields){
+   fields[field].value = "";
+  }
 }
 
 //scroll function

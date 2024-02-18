@@ -250,3 +250,11 @@ footer {
     0% {scale:1;}
     100%{scale:1.4; }
   }
+
+  /* Contact page */
+
+  #submit-btn {
+    font-family: var(--title);
+    font-size: x-large;
+    padding: 5px;
+  }
