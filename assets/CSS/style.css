@@ -62,7 +62,7 @@ header {
 }
 
 /* Welcome block */
-.welcome{
+.welcome {
   background-color: var(--light-pink);
   font-family: 'Abril Fatface';
   contain: paint;
@@ -71,7 +71,7 @@ header {
   align-items: center;
   justify-content: center;
 
-    & .btn::before{
+    & .btn::before {
       display: inline;
       position: absolute;
       transform: rotate(315deg);
@@ -113,7 +113,7 @@ header {
 }
 
 /* letter block */
-#letter-section{
+#letter-section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,9 +122,7 @@ header {
 
 /* scroll snap effect */
 html, body, section {
-  block-size: 100%;
-  margin: 0;
-  padding: 0;
+  min-height: 100vh;
 }
 
 html {
