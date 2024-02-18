@@ -161,7 +161,7 @@ fieldset > div > input, fieldset > input {
   padding: 10%;
 }
 
-#generate-btn {
+#generate-btn, #clear-btn {
   font-family: var(--title);
   font-size: x-large;
   padding: 5px;
