@@ -57,10 +57,6 @@ clear.addEventListener('click', () => {
 // When a New Letter button is clicked, both the input form and the Letter are cleared
 newLetter.addEventListener('click', () => {
   reset();
-  // let defaultLetterType = document.getElementById('letter-type');
-  // defaultLetterType.value = "Platonic";
-  // const letterOutput = document.getElementById('letterOutput');
-  // letterOutput.innerText = "";
 });
 
 
@@ -208,8 +204,11 @@ function reset() {
   for (field in fields){
    fields[field].value = "";
   }
+
   let defaultLetterType = document.getElementById('letter-type');
   defaultLetterType.value = "Platonic";
+  highlightButton(platonic);
+
   const letterOutput = document.getElementById('letterOutput');
   letterOutput.innerText = "";
 }
