@@ -26,6 +26,12 @@ function setNewLetterTypeValue(newLetterType){
     letterTypeInput.value = newLetterType;
   }
 
+// Hide the letter section on load of the window
+window.addEventListener('load', function() {
+    hideYourLetterSection();
+    reset();
+});
+
 // Attach event listener to Submit and get letterType and buttonToHighLight
 document.getElementById('loveLetterForm').addEventListener('submit', (event) => {
   event.preventDefault(),scroll(); // Prevent form submission and scroll
