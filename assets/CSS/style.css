@@ -85,6 +85,28 @@ header {
       animation-direction: alternate ;
     }
 }
+
+.welcome::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(71, 17, 5, 0.641);
+  z-index: -1;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
 /* main block */
 .main{
   background-color: var(--light-red);
