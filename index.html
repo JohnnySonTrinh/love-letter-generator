@@ -10,11 +10,42 @@
   <!--Favicon-->
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <!--Styles-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
 <body>
+  <header>
+    <!--Navbar-->
+      <nav class="navbar navbar-expand-md p-0">
+        <div class="container-fluid p-0">
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link active" aria-current="page" aria-label="Home" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-label="New Letter" href="#loveLetterForm">New Letter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-label="About" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-label="Contact Us" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+  <!-- welcom section -->
   <section id="welcome-section" class="welcome">
     <video class="video-container" muted autoplay loop>
       <source src="./assets/images/heart-bg.mp4" type="video/mp4">
@@ -50,9 +81,8 @@
       </div>
     </nav>
   </header>
-
     <!--Main-->
-    <div class="container d-flex flex-column align-items-center justify-content-center pb-3 h-80 mt-5">
+    <div class="container d-flex flex-column align-items-center justify-content-center pb-3">
       <div class="card p-5">
         <h1>Love Letter Generator</h1>
         <form id="loveLetterForm">
@@ -69,35 +99,35 @@
           <fieldset id="main-form" class="input-container pt-3">
             <div>
               <label for="partnerName">Partner's Name:</label>
-              <input type="text" name="partnerName" id="partnerName" pattern="^[a-zA-Z]+$" title="Please enter letters only" required>
+              <input type="text" name="partnerName" id="partnerName" pattern="^[a-zA-Z\s]+$" title="Please enter letters only" required>
             </div>
             <div>
               <label for="noun1">Noun 1:</label>
-              <input type="text" name="noun1" id="noun1" pattern="^[a-zA-Z]+$" title="Please enter letters only" required>
+              <input type="text" name="noun1" id="noun1" pattern="^[a-zA-Z\s]+$" title="Please enter letters only" required>
               <button type="button" id="randomizeNoun1"><i class="fa fa-dice"></i></button>
             </div>
             <div>
               <label for="noun2">Noun 2:</label>
-              <input type="text" name="noun2" id="noun2" pattern="^[a-zA-Z]+$" title="Please enter letters only" required>
+              <input type="text" name="noun2" id="noun2" pattern="^[a-zA-Z\s]+$" title="Please enter letters only" required>
               <button type="button" id="randomizeNoun2"><i class="fa fa-dice"></i></button>
             </div>
             <div>
               <label for="eyeColor">Eye Colour:</label>
-              <input type="text" name="eyeColor" id="eyeColor" pattern="^[a-zA-Z]+$" title="Please enter letters only" required>
+              <input type="text" name="eyeColor" id="eyeColor" pattern="^[a-zA-Z\s]+$" title="Please enter letters only" required>
             </div>
             <div>
               <label for="adjective1">Adjective 1:</label>
-              <input type="text" name="adjective1" id="adjective1" pattern="^[a-zA-Z]+$" title="Please enter letters only" required>
+              <input type="text" name="adjective1" id="adjective1" pattern="^[a-zA-Z\s]+$" title="Please enter letters only" required>
               <button type="button" id="randomizeAdjective1"><i class="fa fa-dice"></i></button>
             </div>
             <div>
               <label for="adjective2">Adjective 2:</label>
-              <input type="text" name="adjective2" id="adjective2" pattern="^[a-zA-Z]+$" title="Please enter letters only" required>
+              <input type="text" name="adjective2" id="adjective2" pattern="^[a-zA-Z\s]+$" title="Please enter letters only" required>
               <button type="button" id="randomizeAdjective2"><i class="fa fa-dice"></i></button>
             </div>
             <div>
               <label for="yourName">Your Name:</label>
-              <input type="text" name="yourName" id="yourName" pattern="^[a-zA-Z]+$" title="Please enter letters only" required>
+              <input type="text" name="yourName" id="yourName" pattern="^[a-zA-Z\s]+$" title="Please enter letters only" required>
               <br>
               <input class="btn mt-3" id="generate-btn" type="submit" value="Generate">
               <input class="btn mt-3" id="clear-btn" type="submit" value="Clear">
@@ -106,38 +136,6 @@
         </form>
       </div>
     </div>
-
-
-    <!--footer -->
-    <footer class="footer d-none d-sm-flex">
-      <ul class="nav justify-content-end ">
-        <li class="nav-item ">
-          <a href="https://github.com/emilyrosenberg" target="_blank"
-            ><i class="fa-brands fa-github"></i> Emily</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/JohnnySonTrinh" target="_blank"
-            ><i class="fa-brands fa-github"></i> Johnny</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/caleom" target="_blank"
-            ><i class="fa-brands fa-github"></i> Liam</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/lucia2007" target="_blank"
-            ><i class="fa-brands fa-github"></i> Lucia</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/Cleg83" target="_blank"
-            ><i class="fa-brands fa-github"></i> Matthew</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/msamarpanraj" target="_blank"
-            ><i class="fa-brands fa-github"></i> Samarpan</a>
-        </li>
-      </ul>
-    </footer>
-  </section>
 
    <!-- Letter Section -->
   <section id="letter-section">
@@ -151,19 +149,58 @@
       <h2>Your Letter...</h2>
         <div id="letterOutput" >
         </div>
+        <button id="download" type="submit">Download</button>
       </div>
+      <img id="pdfBg" class="d-none" src="assets/images/pdf_bg.jpg">
   </section>
 
+      <!--footer -->
+      <footer class="footer d-none d-sm-flex">
+        <ul class="nav justify-content-end ">
+          <li class="nav-item ">
+            <a href="https://github.com/emilyrosenberg" target="_blank"
+              ><i class="fa-brands fa-github"></i> Emily</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/JohnnySonTrinh" target="_blank"
+              ><i class="fa-brands fa-github"></i> Johnny</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/caleom" target="_blank"
+              ><i class="fa-brands fa-github"></i> Liam</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/lucia2007" target="_blank"
+              ><i class="fa-brands fa-github"></i> Lucia</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/Cleg83" target="_blank"
+              ><i class="fa-brands fa-github"></i> Matthew</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://github.com/msamarpanraj" target="_blank"
+              ><i class="fa-brands fa-github"></i> Samarpan</a>
+          </li>
+        </ul>
+      </footer>
+    </section>
+
     <!--Scripts-->
+    <script src="assets/scripts/scipt.js" ></script>
 
     <!-- Font Awesome Script -->
     <script src="https://kit.fontawesome.com/668de150a5.js" crossorigin="anonymous"></script>
 
-    <script src="assets/scripts/generator/letter.js"></script>
+   
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-    <script src="assets/scripts/scipt.js"></script>
+    <!-- PDF JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
+    
+    <script src="assets/scripts/generator/letter.js"></script>
+    
 
-</body>
+  </body>
 </html>
