@@ -8,6 +8,18 @@ const clear = document.getElementById("clear-btn")
 
 const newLetter = document.getElementById("new-letter")
 
+const letterSection = document.getElementById("letter-section")
+
+// Hide the "Your Letter" section when no letter was generated yet
+function hideYourLetterSection(){
+  letterSection.style.display ="none";
+}
+
+// Unhide the "Your Letter" section when no letter was generated yet
+function unhideYourLetterSection(){
+  letterSection.style.display ="flex";
+}
+
 // Change the letter type in the form based on the currently clicek button in "Your Letter" section
 function setNewLetterTypeValue(newLetterType){
     let letterTypeInput = document.getElementById('letter-type');
@@ -52,13 +64,14 @@ monogamous.addEventListener('click', () => {
 // When the Clear button is clicked, both the input form and the Letter are cleared
 clear.addEventListener('click', () => {
   reset();
+  hideYourLetterSection();
 });
 
 // When a New Letter button is clicked, both the input form and the Letter are cleared
 newLetter.addEventListener('click', () => {
   reset();
+  hideYourLetterSection();
 });
-
 
 function generateLoveLetter(id) {
   // Collect user input
@@ -128,6 +141,8 @@ function generateLoveLetter(id) {
 
   Forever yours only,
   ${yourName}`
+
+  unhideYourLetterSection();
 
   // Display the letter
   const letterOutput = document.getElementById('letterOutput');
@@ -213,13 +228,21 @@ function reset() {
   letterOutput.innerText = "";
 }
 
-//scroll function
-welcomeBtn = document.getElementById("welcome-btn");
-welcomeBtn.addEventListener("click",scroll)
-
 function scroll(){
     window.scrollBy(0,200)
 }
+
+//scroll function and hide the Your Letter section, reset the inputs
+welcomeBtn = document.getElementById("welcome-btn");
+welcomeBtn.addEventListener("click",scroll)
+
+welcomeBtn.addEventListener('click', () => {
+  scroll();
+  reset();
+  hideYourLetterSection();
+});
+
+
 
 //Capitalise function for your and partner name
 function capitalize(str) {
