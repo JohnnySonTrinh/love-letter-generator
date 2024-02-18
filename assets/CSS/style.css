@@ -72,6 +72,8 @@ body {
 /* scroll snap effect */
 html, body, section {
   block-size: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -98,10 +100,7 @@ fieldset > div {
   margin-bottom: 10px;
 }
 
-fieldset > div > label, fieldset > label {
-  width: 80%;
-}
-
+fieldset > div > label, fieldset > label,
 fieldset > div > input, fieldset > input {
   width: 80%
 }
@@ -110,7 +109,8 @@ fieldset > div > input, fieldset > input {
   padding: 10%;
 }
 
-#generate-btn {
+#generate-btn,
+#submit-btn {
   font-family: var(--title);
   font-size: x-large;
   padding: 5px;
@@ -148,6 +148,10 @@ fieldset > div > input, fieldset > input {
 /**Header*/
 
 header {
+  position: fixed;
+  z-index: 1;
+  top:0;
+  left:0;
   width: 100%;
   line-height: 0.3rem;
   text-transform: uppercase;
@@ -182,6 +186,7 @@ header {
 /**Footer*/
 footer {
     position: fixed;
+    z-index: 1;
     font-family: var(--main-font);
     font-size: 0.9rem;
     bottom: 0;
@@ -252,9 +257,3 @@ footer {
   }
 
   /* Contact page */
-
-  #submit-btn {
-    font-family: var(--title);
-    font-size: x-large;
-    padding: 5px;
-  }
