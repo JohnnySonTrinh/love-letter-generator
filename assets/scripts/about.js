@@ -14,16 +14,16 @@ document.addEventListener('DOMContentLoaded', () => {
         leftButton.style.display = 'inline-block';
         rightButton.style.display = 'inline-block';
         swipeGroup.style.display = 'inline-block';
-        
+
         // Hide the card group
         cardTeam.style.display = 'none';
-        
+
         // Change the background image of the profilePicture card
         profilePictureCard.style.backgroundImage = "url('assets/images/picturePicture1.png')";
         loveLetterCard.style.backgroundImage = "url('assets/images/loveLetter1.png')";
         loveStuffCard.style.backgroundImage = "url('assets/images/loveStuff1.png')";
         aboutCard.style.backgroundImage = "url('assets/images/aboutCard1.png')";
-        
+
         // Optionally, hide the start-swipe button after clicking
         startSwipeButton.style.display = 'none';
     });

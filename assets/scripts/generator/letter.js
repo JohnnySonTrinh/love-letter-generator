@@ -252,7 +252,7 @@ function newPdf(){
     doc.addImage(background,"JPEG", 0, 0, 8.25, 11.75)
 
     let letterSplit = doc.splitTextToSize(letter, maxWidth)
-    
+
    doc.text(letterSplit, 1, 1.5);
    doc.save("love-letter.pdf");
 }
