@@ -6,6 +6,8 @@ const monogamous = document.getElementById("Monogamous")
 
 const clear = document.getElementById("clear-btn")
 
+const newLetter = document.getElementById("new-letter")
+
 // Change the letter type in the form based on the currently clicek button in "Your Letter" section
 function setNewLetterTypeValue(newLetterType){
     let letterTypeInput = document.getElementById('letter-type');
@@ -47,11 +49,20 @@ monogamous.addEventListener('click', () => {
   setNewLetterTypeValue("Monogamous")
 });
 
+// When the Clear button is clicked, both the input form and the Letter are cleared
 clear.addEventListener('click', () => {
   reset();
-  let defaultLetterType = document.getElementById('letter-type');
-  defaultLetterType.value = "Platonic";
 });
+
+// When a New Letter button is clicked, both the input form and the Letter are cleared
+newLetter.addEventListener('click', () => {
+  reset();
+  // let defaultLetterType = document.getElementById('letter-type');
+  // defaultLetterType.value = "Platonic";
+  // const letterOutput = document.getElementById('letterOutput');
+  // letterOutput.innerText = "";
+});
+
 
 function generateLoveLetter(id) {
   // Collect user input
@@ -197,6 +208,10 @@ function reset() {
   for (field in fields){
    fields[field].value = "";
   }
+  let defaultLetterType = document.getElementById('letter-type');
+  defaultLetterType.value = "Platonic";
+  const letterOutput = document.getElementById('letterOutput');
+  letterOutput.innerText = "";
 }
 
 //scroll function
