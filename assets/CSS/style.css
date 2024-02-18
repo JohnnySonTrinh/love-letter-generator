@@ -62,7 +62,7 @@ header {
 }
 
 /* Welcome block */
-.welcome{
+.welcome {
   background-color: var(--light-pink);
   font-family: 'Abril Fatface';
   contain: paint;
@@ -71,7 +71,7 @@ header {
   align-items: center;
   justify-content: center;
 
-    & .btn::before{
+    & .btn::before {
       display: inline;
       position: absolute;
       transform: rotate(315deg);
@@ -113,7 +113,7 @@ header {
 }
 
 /* letter block */
-#letter-section{
+#letter-section {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,7 +122,7 @@ header {
 
 /* scroll snap effect */
 html, body, section {
-  block-size: 100%;
+  min-height: 100vh;
 }
 
 html {
@@ -149,10 +149,7 @@ fieldset > div {
   margin-bottom: 10px;
 }
 
-fieldset > div > label, fieldset > label {
-  width: 80%;
-}
-
+fieldset > div > label, fieldset > label,
 fieldset > div > input, fieldset > input {
   width: 80%
 }
@@ -161,7 +158,8 @@ fieldset > div > input, fieldset > input {
   padding: 10%;
 }
 
-#generate-btn, #clear-btn {
+#generate-btn, #clear-btn,
+#submit-btn {
   font-family: var(--title);
   font-size: x-large;
   padding: 5px;
@@ -412,6 +410,7 @@ About Section style
 /**Footer*/
 footer {
   position: fixed;
+    z-index: 1;
   font-family: var(--main-font);
   font-size: 0.9rem;
   bottom: 0;
@@ -481,10 +480,4 @@ footer {
   100%{scale:1.4;}
 }
 
-/* Contact page */
-
-#submit-btn {
-  font-family: var(--title);
-  font-size: x-large;
-  padding: 5px;
-}
+  /* Contact page */
