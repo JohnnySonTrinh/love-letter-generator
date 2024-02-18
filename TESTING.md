@@ -1,11 +1,42 @@
 ## Contents
 
 * [Automated Testing](#automated-testing)
+  * [Lighthouse](#lighthouse)
+  * [W3C](#W3C)
 * [Manual Testing](#manual-testing)
+  * [Welcome Page](#welcome-page)
+  * [Main Form](#main-form)
+  * [About Page](#about-page)
+  * [Contact Page](#contact-page)
+  * [Header](#header)
+  * [Footer](#footer)
+
 
 ## Automated Testing
 
-### Lighthouse (as of 17/02/2024)
+### Lighthouse 
+
+#### Home Page (as of 17/02/2024)
+![Home Page Lighthouse](assets/readme-images/lighthouse-home-page-1702.png)
+
+#### About Page (as of 17/02/2024)
+![About Page Lighthouse](assets/readme-images/lighthouse-about-page-1702.png)
+
+#### Contact Page (as of 17/02/2024)
+![Contact Page Lighthouse](assets/readme-images/lighthouse-contact-page-1702.png)
+
+### W3C 
+
+#### Home Page (as of 17/02/2024)
+![Home Page W3C validation](assets/readme-images/w3c-home-page.png)
+
+#### About Page (as of 17/02/2024)
+![About W3C validation](assets/readme-images/w3c-about-page.png)
+
+#### Contact Page (as of 17/02/2024)
+![Contact W3C validation](assets/readme-images/w3c-contact-page.png)
+
+N.B. The section that triggered the warning will /can be removed when contact page is styled. The form is only nested inside the section so the header and background-color match the home page. If the whole site is laid out vertically, this section will not be required. 
 
 ## Manual Testing
 
@@ -32,18 +63,18 @@
 | Adjective 2 Randomizer | Generates a random adjective when clicked and populates Adjective 2 input field | Clicked randomizer button | Populates adjective 2 input field with random adjective | Pass |
 | Your Name input field | Allows user to input text | Input text | Allowed text input | Pass |
 | Generate button | Generates letter if all input fields have been completed | Completed all fields and clicked Generate button | Letter generated with all fields displayed as entered | Pass |
-| Generate button | Will not allow user to proceed if Partner's Name is not entered | Tried to generate letter without inputting Partner's Name | Letter not generated an prompted to input text in the blank input field | Pass |
-| Generate button | Will not allow user to proceed if Noun 1 is not entered | Tried to generate letter without inputting Noun 1| Letter not generated an prompted to input text in the blank input field | Pass |
-| Generate button | Will not allow user to proceed if Noun 2 is not entered | Tried to generate letter without inputting Noun 2| Letter not generated an prompted to input text in the blank input field | Pass |
-| Generate button | Will not allow user to proceed if Eye Color is not entered | Tried to generate letter without inputting Eye Color| Letter not generated an prompted to input text in the blank input field | Pass |
-| Generate button | Will not allow user to proceed if Adjective 1 is not entered | Tried to generate letter without inputting Adjective 1| Letter not generated an prompted to input text in the blank input field | Pass |
-| Generate button | Will not allow user to proceed if Adjective 2 is not entered | Tried to generate letter without inputting Adjective 2| Letter not generated an prompted to input text in the blank input field | Pass |
-| Generate button | Will not allow user to proceed if Your Name is not entered | Tried to generate letter without inputting Your Name| Letter not generated an prompted to input text in the blank input field | Pass |
+| Generate button | Will not allow user to proceed if Partner's Name is not entered | Tried to generate letter without inputting Partner's Name | Letter not generated and prompted to input text in the blank input field | Pass |
+| Generate button | Will not allow user to proceed if Noun 1 is not entered | Tried to generate letter without inputting Noun 1| Letter not generated and prompted to input text in the blank input field | Pass |
+| Generate button | Will not allow user to proceed if Noun 2 is not entered | Tried to generate letter without inputting Noun 2| Letter not generated and prompted to input text in the blank input field | Pass |
+| Generate button | Will not allow user to proceed if Eye Color is not entered | Tried to generate letter without inputting Eye Color| Letter not generated and prompted to input text in the blank input field | Pass |
+| Generate button | Will not allow user to proceed if Adjective 1 is not entered | Tried to generate letter without inputting Adjective 1| Letter not generated and prompted to input text in the blank input field | Pass |
+| Generate button | Will not allow user to proceed if Adjective 2 is not entered | Tried to generate letter without inputting Adjective 2| Letter not generated and prompted to input text in the blank input field | Pass |
+| Generate button | Will not allow user to proceed if Your Name is not entered | Tried to generate letter without inputting Your Name| Letter not generated and prompted to input text in the blank input field | Pass |
 
 
-### About page
+### About Page
 
-### Contact Us Page
+### Contact Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
