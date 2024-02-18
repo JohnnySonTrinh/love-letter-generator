@@ -77,12 +77,13 @@ header {
       transform: rotate(315deg);
       font-size: clamp(2rem, 3vw, 6rem);
       translate: -75% -75%;
-      content: "The Love Generator";
+      content: "Cupid's Quill";
+      color: var(--white);
 
       animation-name: GrowShrink;
       animation-duration: 1.5s;
       animation-iteration-count: infinite;
-      animation-direction: alternate ;
+      animation-direction: alternate;
     }
 }
 
@@ -145,7 +146,7 @@ section {
  align-items: center;
 }
 
-fieldset > div {
+fieldset > div, #contact-form > div {
   margin-bottom: 10px;
 }
 
