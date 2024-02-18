@@ -12,7 +12,7 @@
     --pink: #F26A8D;
     --light-pink: #F49CBB;
     --light-blue: #CBEEF3;
-    --white: #EEFAFB; 
+    --white: #EEFAFB;
 }
 
 /* General styles */
@@ -74,15 +74,19 @@ header {
     & .btn::before {
       display: inline;
       position: absolute;
-      transform: rotate(315deg);
+      /* transform: rotate(315deg); */
+      transform: rotate(350deg);
       font-size: clamp(2rem, 3vw, 6rem);
-      translate: -75% -75%;
-      content: "The Love Generator";
+      /* translate: -75% -75%; */
+      top: 30%;
+      left: 20%;
+      content: "Cupid's Quill";
+      color: var(--white);
 
       animation-name: GrowShrink;
       animation-duration: 1.5s;
       animation-iteration-count: infinite;
-      animation-direction: alternate ;
+      animation-direction: alternate;
     }
 }
 
@@ -138,27 +142,40 @@ section {
 
 .card {
  background-color: var(--light-blue);
- border-color: var(--dark-red);
  border-radius: 20% 0 20% 0;
- border: 0.25rem solid;
+ border: 0.25rem solid var(--light-pink);
  width: 80%;
  align-items: center;
 }
 
-fieldset > div {
+fieldset > div, #contact-form > div {
   margin-bottom: 10px;
 }
 
 fieldset > div > label, fieldset > label,
 fieldset > div > input, fieldset > input {
-  width: 80%
+  width: 100%
+}
+
+fieldset > div > button {
+  border: 2px solid var(--light-pink);
+  background-color: var(--white);
+  color: var(--red);
+  margin-top: 5px;
+  width: 50px;
+}
+
+.letter-type-button {
+  font-family: var(--title);
+  font-weight: 200;
+  border: 2px solid var(--pink);
 }
 
 .letter-output {
   padding: 10%;
 }
 
-#generate-btn, #clear-btn,
+#generate-btn, #clear-btn, #download,
 #submit-btn {
   font-family: var(--title);
   font-size: x-large;
@@ -167,9 +184,8 @@ fieldset > div > input, fieldset > input {
 
 /* Button styling */
 .btn {
-  border-color: var(--dark-red);
   border-radius: 25% 0 25% 0;
-  border: 0.25rem solid;
+  border: 0.25rem solid var(--pink);
   background-color: var(--white);
   font-size: clamp(2rem, 2vw, 5rem);;
   height: clamp(10rem, 10%, 20rem);
@@ -177,9 +193,8 @@ fieldset > div > input, fieldset > input {
   transition: height 100ms, width 100ms;
 
   &:hover {
-    border-color: var(--dark-red);
     border-radius: 25% 0 25% 0;
-    border: 0.25rem solid;
+    border: 0.25rem solid var(--light-pink);
     background-color: var(--white);
     height: calc(clamp(10rem, 10%, 20rem)*1.1);
     width: calc(clamp(10rem, 10%, 20rem)*1.1);
