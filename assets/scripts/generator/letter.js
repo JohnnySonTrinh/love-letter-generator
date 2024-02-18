@@ -4,6 +4,14 @@ const romantic = document.getElementById("Romantic")
 const polyamorous = document.getElementById("Polyamorous")
 const monogamous = document.getElementById("Monogamous")
 
+const clear = document.getElementById("clear-btn")
+
+// Change the letter type in the form based on the currently clicek button in "Your Letter" section
+function setNewLetterTypeValue(newLetterType){
+    let letterTypeInput = document.getElementById('letter-type');
+    letterTypeInput.value = newLetterType;
+  }
+
 // Attach event listener to Submit and get letterType and buttonToHighLight
 document.getElementById('loveLetterForm').addEventListener('submit', (event) => {
   event.preventDefault(),scroll(); // Prevent form submission and scroll
@@ -12,32 +20,37 @@ document.getElementById('loveLetterForm').addEventListener('submit', (event) => 
   const buttonToHighlight = document.getElementById(letterType);
   generateLoveLetter(letterType);
   highlightButton(buttonToHighlight);
-  reset();
 });
 
 // Attach event listeners to each letter type button
 platonic.addEventListener('click', () => {
   generateLoveLetter('Platonic');
   highlightButton(platonic);
-  reset();
+  setNewLetterTypeValue("Platonic")
 });
 
 romantic.addEventListener('click', () => {
   generateLoveLetter('Romantic');
   highlightButton(romantic);
-  reset();
+  setNewLetterTypeValue("Romantic")
 });
 
 polyamorous.addEventListener('click', () => {
   generateLoveLetter('Polyamorous');
   highlightButton(polyamorous);
-  reset();
+  setNewLetterTypeValue("Polyamorous")
 });
 
 monogamous.addEventListener('click', () => {
   generateLoveLetter('Monogamous');
   highlightButton(monogamous);
+  setNewLetterTypeValue("Monogamous")
+});
+
+clear.addEventListener('click', () => {
   reset();
+  let defaultLetterType = document.getElementById('letter-type');
+  defaultLetterType.value = "Platonic";
 });
 
 function generateLoveLetter(id) {
