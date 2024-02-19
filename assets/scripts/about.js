@@ -30,10 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-profilePictures = ['picturePicture1.png', 'picturePicture2.png', 'picturePicture3.png', 'picturePicture4.png', 'picturePicture5.png', 'picturePicture6.png'];
-loveLetters = ['loveLetter1.png', 'loveLetter2.png', 'loveLetter3.png', 'loveLetter4.png', 'loveLetter5.png', 'loveLetter6.png'];
-loveStuffs = ['loveStuff1.png', 'loveStuff2.png', 'loveStuff3.png', 'loveStuff4.png', 'loveStuff5.png', 'loveStuff6.png'];
-aboutCards = ['aboutCard1.png', 'aboutCard2.png', 'aboutCard3.png', 'aboutCard4.png', 'aboutCard5.png', 'aboutCard6.png'];
+const profilePictures = ['picturePicture1.png', 'picturePicture2.png', 'picturePicture3.png', 'picturePicture4.png', 'picturePicture5.png', 'picturePicture6.png'];
+const loveLetters = ['loveLetter1.png', 'loveLetter2.png', 'loveLetter3.png', 'loveLetter4.png', 'loveLetter5.png', 'loveLetter6.png'];
+const loveStuffs = ['loveStuff1.png', 'loveStuff2.png', 'loveStuff3.png', 'loveStuff4.png', 'loveStuff5.png', 'loveStuff6.png'];
+const aboutCards = ['aboutCard1.png', 'aboutCard2.png', 'aboutCard3.png', 'aboutCard4.png', 'aboutCard5.png', 'aboutCard6.png'];
 
 
 document.addEventListener('DOMContentLoaded', () => {
