@@ -28,10 +28,10 @@
 ### W3C 
 
 #### Home Page (as of 17/02/2024)
-![Home Page W3C validation](assets/readme-images/w3c-home-page.png)
+![Home Page W3C validation](assets/readme-images/w3c-home-1902.png)
 
 #### About Page (as of 17/02/2024)
-![About W3C validation](assets/readme-images/w3c-about-page.png)
+![About W3C validation](assets/readme-images/w3c-about-1902.png)
 
 #### Contact Page (as of 17/02/2024)
 ![Contact W3C validation](assets/readme-images/w3c-contact-page.png)
