@@ -288,3 +288,9 @@ function newPdf(){
    doc.text(letterSplit, 1, 1.5);
    doc.save("love-letter.pdf");
 }
+
+//back button
+const back = document.getElementById("back")
+back.addEventListener("click", () => {
+  scroll("main-section");
+})
