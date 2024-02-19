@@ -1,7 +1,10 @@
 ![Heart Banner](assets/images/readme-heart-banner.png)
 
 # Cupid's Quill
-Generate your very own love letter for your loved ones! If you have someone in mind but you don't know what to say, Cupid's Quill can help. This is a fun and engaging web app that is responsive on all screen sizes.
+Generate your very own love letter for your loved ones! If you have someone in mind but you don't know what to say, Cupid's Quill can help. This is a fun and engaging web app that is responsive on all screen sizes. <br>
+The deployed project can be viewed [here](https://lucia2007.github.io/love-letter-generator/). <br>
+
+![mockup](assets/readme-images/mockup.png)
 
 ## Contents
 
@@ -82,6 +85,9 @@ We would like to create more targeted letter styles so the user can control:
 - the input words fitting the letter content
 - selection from more styles for all the ways we can love!
 
+### Other browsers
+We built and tested this project in Chrome, and we would like to improve appearance and functionality on other browsers.
+
 ## Project Management (Agile Development)
 
 We have been using [GitHub projects](https://github.com/users/lucia2007/projects/10/views/1) for organizing our project and tracking user stories/issues. It is a very helpful tool which enabled us to keep all the PBIs in one place and to tackle the issues gradually and to keep an eye on our progress.
@@ -104,8 +110,6 @@ The Project tool was very beneficial for our development process, especially bec
 
 [Project Board](./assets/readme-images/project-board.png)
 
-Back to top
-
 ## Deployment
 
 This page was deployed using [github pages](https://pages.github.com/)
@@ -122,10 +126,12 @@ This page was deployed using [github pages](https://pages.github.com/)
 
 - Alongside the Bootstrap CSS reset, [Normalize](https://necolas.github.io/normalize.css/) V8 was used to make all browsers render more similarly
 
+- The mockup image was created with [Techsini](https://techsini.com/multi-mockup/index.php).
+
 ## Credits
 
 - [This guide](https://www.youtube.com/watch?v=G_h2pGZcOzc) was used for the footer effect.
 
 - [This Videos Series](https://www.youtube.com/watch?v=6toXMFyQdB0&list=PLc1g3vwxhg1WVhYrKP0GJlZIlSn9loyXD) was used for guidance on how to use jsPDF
 
-- Thanks to our amazing team for contributing all of their varied skills and ideas, and making this project fun and successful! Love you!!!
+- Thanks to our amazing team fo Cupid's Helpers for contributing all of their varied skills and ideas, and making this project fun and successful! 💘 Love you!!!
