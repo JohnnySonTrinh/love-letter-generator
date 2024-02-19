@@ -47,7 +47,8 @@ On the next page the user can view their letter output and switch letter styles 
 </div>
 
 ### About Page
-The About page was designed so that you can swipe to find out more about us, like a dating app. It shows cards with information about the team contributors: Profile, LinkedIn link, things they love... as well as a few words about tech and love, or their love for tech!
+The About page was designed so that you can swipe to find out more about us, like a dating app. It shows cards with information about the team contributors: Profile, LinkedIn link, things they love... as well as a few words about tech and love, or their love for tech! <br>
+This page needs some more work to make it as fabulous as planned, please see [Future Implementations](#future-implementations).
 
 ### Contact Page
 The Contact page has a form that sends a message to the Cupid team. It has input fields for name, email, message, and a submit button. When Submit is clicked, there is a feedback message.
@@ -77,7 +78,11 @@ The UX design was made in Balsamiq. See the wireframes [here](assets/PDF/LoveLet
 ## Future Implementations
 
 ### About page
-We would like to improve the functionality of the About page.
+We would like to improve the functionality of the About page:
+- Optimize image size so that the page loads faster
+- Add links to GitHub and LinkedIn
+- Make all six cards visible when the About page is opened
+- Make the cards clickable to view the content
 
 ### Letter styles
 We would like to create more targeted letter styles so the user can control:
@@ -86,7 +91,14 @@ We would like to create more targeted letter styles so the user can control:
 - selection from more styles for all the ways we can love!
 
 ### Other browsers
-We built and tested this project in Chrome, and we would like to improve appearance and functionality on other browsers.
+We built and tested this project in Chrome with Chrome Developer Tools, and we would like to improve appearance and functionality on other browsers.
+
+### Mobile UX
+We would like to improve the user experience with the web app on mobile:
+- Make content properly aligned
+- Make sure all intended styles and colors show
+- Make form/input field stay visible when keyboard pops up
+- Improve scrolling
 
 ## Project Management (Agile Development)
 
