@@ -1,4 +1,13 @@
 
+// User inputs
+const partnerNameInput = document.getElementById('partnerName');
+const noun1Input = document.getElementById('noun1');
+const noun2Input = document.getElementById('noun2');
+const eyeColorInput = document.getElementById('eyeColor');
+const adjective1Input = document.getElementById('adjective1');
+const adjective2Input = document.getElementById('adjective2');
+const yourNameInput = document.getElementById('yourName');
+
 // Identify letter type from buttons
 const platonic = document.getElementById("Platonic");
 const romantic = document.getElementById("Romantic");
@@ -83,13 +92,13 @@ newLetter.addEventListener('click', () => {
 
 function generateLoveLetter(letterType) {
   // Collect user input
-  const partnerName = capitalize(document.getElementById('partnerName').value.toLowerCase());
-  const noun1 = document.getElementById('noun1').value.toLowerCase();
-  const noun2 = document.getElementById('noun2').value.toLowerCase();
-  const eyeColor = document.getElementById('eyeColor').value.toLowerCase();
-  const adjective1 = document.getElementById('adjective1').value.toLowerCase();
-  const adjective2 = document.getElementById('adjective2').value.toLowerCase();
-  const yourName = capitalize(document.getElementById('yourName').value.toLowerCase());
+  const partnerName = capitalize(partnerNameInput.value.toLowerCase());
+  const noun1 = noun1Input.value.toLowerCase();
+  const noun2 = noun2Input.value.toLowerCase();
+  const eyeColor = eyeColorInput.value.toLowerCase();
+  const adjective1 = adjective1Input.value.toLowerCase();
+  const adjective2 = adjective2Input.value.toLowerCase();
+  const yourName = capitalize(yourNameInput.value.toLowerCase());
 
   // Prepare/Generate the letter according to type
   // Platonic letter
@@ -222,9 +231,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //reset function
 function reset() {
-  let fields = [partnerName, noun1, noun2, eyeColor, adjective1, adjective2, yourName];
+  let fields = [partnerNameInput, noun1Input, noun2Input, eyeColorInput, adjective1Input, adjective2Input, yourNameInput];
 
-  for (field in fields){
+  for (let field in fields){
    fields[field].value = "";
   }
 
@@ -244,7 +253,7 @@ function scroll(id){
 }
 
 //scroll function and hide the Your Letter section, reset the inputs
-welcomeBtn = document.getElementById("welcome-btn");
+const welcomeBtn = document.getElementById("welcome-btn");
 
 welcomeBtn.addEventListener('click', () => {
   scroll("main-section");
@@ -289,7 +298,7 @@ function newPdf(){
 }
 
 //back button
-const back = document.getElementById("back")
+const back = document.getElementById("back");
 back.addEventListener("click", () => {
   scroll("main-section");
-})
+});

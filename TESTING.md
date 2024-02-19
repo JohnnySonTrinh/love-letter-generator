@@ -3,6 +3,7 @@
 * [Automated Testing](#automated-testing)
   * [Lighthouse](#lighthouse)
   * [W3C](#W3C)
+  * [JS Testing](#JS-testing)
 * [Manual Testing](#manual-testing)
   * [Welcome Page](#welcome-page)
   * [Main Form](#main-form)
@@ -16,27 +17,33 @@
 
 ### Lighthouse 
 
-#### Home Page (as of 17/02/2024)
-![Home Page Lighthouse](assets/readme-images/lighthouse-home-page-1702.png)
+#### Home Page 
+![Home Page Lighthouse](assets/readme-images/lighthouse-index-1902.png)
 
-#### About Page (as of 17/02/2024)
-![About Page Lighthouse](assets/readme-images/lighthouse-about-page-1702.png)
+#### About Page 
+![About Page Lighthouse](assets/readme-images/lighthouse-about-1902.png)
 
-#### Contact Page (as of 17/02/2024)
-![Contact Page Lighthouse](assets/readme-images/lighthouse-contact-page-1702.png)
+#### Contact Page 
+![Contact Page Lighthouse](assets/readme-images/lighthouse-contact-1902.png)
 
 ### W3C 
 
 #### Home Page 
-![Home Page W3C validation](assets/readme-images/w3c-home-1902.png)
+![Home Page W3C validation](assets/readme-images/w3c-index-1902.png)
 
 #### About Page 
 ![About W3C validation](assets/readme-images/w3c-about-1902.png)
 
-#### Contact Page (as of 17/02/2024)
-![Contact W3C validation](assets/readme-images/w3c-contact-page.png)
+#### Contact Page 
+![Contact W3C validation](assets/readme-images/w3c-contact-1902.png)
 
-N.B. The section that triggered the warning will /can be removed when contact page is styled. The form is only nested inside the section so the header and background-color match the home page. If the whole site is laid out vertically, this section will not be required. 
+### JS Testing
+
+All scripts were tested with [JS Hint](https://jshint.com/) and showed no errors.
+
+![JS testing image](assets/readme-images/js-test-1902.png)
+
+
 
 ## Manual Testing
 
