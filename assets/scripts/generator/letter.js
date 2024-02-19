@@ -1,15 +1,15 @@
 
 // Identify letter type from buttons
-const platonic = document.getElementById("Platonic")
-const romantic = document.getElementById("Romantic")
-const polyamorous = document.getElementById("Polyamorous")
-const monogamous = document.getElementById("Monogamous")
+const platonic = document.getElementById("Platonic");
+const romantic = document.getElementById("Romantic");
+const polyamorous = document.getElementById("Polyamorous");
+const monogamous = document.getElementById("Monogamous");
 
-const clear = document.getElementById("clear-btn")
+const clear = document.getElementById("clear-btn");
 
-const newLetter = document.getElementById("new-letter")
+const newLetter = document.getElementById("new-letter");
 
-const letterSection = document.getElementById("letter-section")
+const letterSection = document.getElementById("letter-section");
 
 // Hide the "Your Letter" section when no letter was generated yet
 function hideYourLetterSection(){
@@ -48,25 +48,25 @@ document.getElementById('loveLetterForm').addEventListener('submit', (event) => 
 platonic.addEventListener('click', () => {
   generateLoveLetter('Platonic');
   highlightButton(platonic);
-  setNewLetterTypeValue("Platonic")
+  setNewLetterTypeValue("Platonic");
 });
 
 romantic.addEventListener('click', () => {
   generateLoveLetter('Romantic');
   highlightButton(romantic);
-  setNewLetterTypeValue("Romantic")
+  setNewLetterTypeValue("Romantic");
 });
 
 polyamorous.addEventListener('click', () => {
   generateLoveLetter('Polyamorous');
   highlightButton(polyamorous);
-  setNewLetterTypeValue("Polyamorous")
+  setNewLetterTypeValue("Polyamorous");
 });
 
 monogamous.addEventListener('click', () => {
   generateLoveLetter('Monogamous');
   highlightButton(monogamous);
-  setNewLetterTypeValue("Monogamous")
+  setNewLetterTypeValue("Monogamous");
 });
 
 // When the Clear button is clicked, both the input form and the Letter are cleared
@@ -116,7 +116,7 @@ function generateLoveLetter(letterType) {
   I am grateful for the love we share, and I promise to cherish and honor it for eternity. You are the light of my life, the beat of my heart, and the one I want to spend forever with.
 
   Forever and always,
-  ${yourName}`
+  ${yourName}`;
 
   // Polyamorous letter
   const polyamorousLetter = `My lovely ${partnerName},
@@ -132,7 +132,7 @@ function generateLoveLetter(letterType) {
   My heart belongs to each of you, bound by our shared experiences and the depth of our affection. With you by my side, I am whole, complete, and endlessly grateful for the privilege of sharing this journey with such ${adjective2} souls.
 
   With all my love and devotion,
-  ${yourName}`
+  ${yourName}`;
 
   // Monogamous letter
   const monogamousLetter = `My amazing ${partnerName},
@@ -148,7 +148,7 @@ function generateLoveLetter(letterType) {
   As we journey through life hand in hand, I am filled with excitement for the future that awaits us. With you by my side, I know that anything is possible. You are my everything, my heart, and my soul.
 
   Forever yours only,
-  ${yourName}`
+  ${yourName}`;
 
   unhideYourLetterSection();
 
@@ -170,7 +170,7 @@ function generateLoveLetter(letterType) {
         letterOutput.innerText = monogamousLetter;
         break;
   }
-};
+}
 
 function highlightButton(selectedLetterType) {
   // Reset the bg + color of all buttons
@@ -265,25 +265,25 @@ function capitalize(str) {
 }
 
 //Download letter section
-const download = document.getElementById("download")
-const background = document.getElementById("pdfBg")
+const download = document.getElementById("download");
+const background = document.getElementById("pdfBg");
 
-download.addEventListener("click", newPdf)
+download.addEventListener("click", newPdf);
 
 
 function newPdf(){
 
-    let maxWidth = 6.25
-    let letter = document.getElementById("letterOutput").innerText
+    let maxWidth = 6.25;
+    let letter = document.getElementById("letterOutput").innerText;
     const doc = new jsPDF({
       orientation: "p",
       unit:"in",
       format:"a4"
     });
-    doc.addImage(background,"JPEG", 0, 0, 8.25, 11.75)
+    doc.addImage(background,"JPEG", 0, 0, 8.25, 11.75);
     //doc.setFont("Montserrat-Regular", "normal")
 
-    let letterSplit = doc.splitTextToSize(letter, maxWidth)
+    let letterSplit = doc.splitTextToSize(letter, maxWidth);
 
    doc.text(letterSplit, 1, 1.5);
    doc.save("love-letter.pdf");
