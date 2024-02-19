@@ -58,7 +58,7 @@
       </nav>
     </header>
     <!--Main-->
-    <div class="container-fluid d-flex flex-column align-items-center justify-content-center pb-3 pt-3">
+    <div class="container-fluid d-flex flex-column align-items-center justify-content-center pb-3 pt-3 vh-100">
       <div class="card p-2 p-md-5">
         <h1>Love Letter Generator</h1>
         <form id="loveLetterForm">
@@ -125,15 +125,11 @@
     <!-- Letter Section -->
     <section id="letter-section">
       <div class="card p-5">
-        <div class="row w-100 text-center">
-          <div class="col col-md-6">
-          <button type="submit" class="platonic letter-type-button mb-1" id="Platonic">Platonic</button>
-          <button type="submit" class="romantic letter-type-button mb-1" id="Romantic">Romantic</button>
-        </div>
-        <div class="col col-md-6">
-          <button type="submit" class="polyamorous letter-type-button mb-1" id="Polyamorous">Polyamorous</button>
-          <button type="submit" class="monogamous letter-type-button mb-1" id="Monogamous">Monogamous</button>
-        </div>
+        <div class="mb-3 text-center">
+          <button type="submit" class="platonic letter-type-button mb-2" id="Platonic">Platonic</button>
+          <button type="submit" class="romantic letter-type-button mb-2" id="Romantic">Romantic</button>
+          <button type="submit" class="monogamous letter-type-button mb-2" id="Monogamous">Monogamous</button>
+          <button type="submit" class="polyamorous letter-type-button mb-2" id="Polyamorous">Polyamorous</button>
         </div>
         <h2>Your Letter...</h2>
         <div id="letterOutput" class="rounded p-1">
