@@ -28,13 +28,13 @@
 ### W3C 
 
 #### Home Page 
-![Home Page W3C validation](assets/readme-images/w3c-home-1902.png)
+![Home Page W3C validation](assets/readme-images/w3c-index-1902.png)
 
 #### About Page 
 ![About W3C validation](assets/readme-images/w3c-about-1902.png)
 
-#### Contact Page (as of 17/02/2024)
-![Contact W3C validation](assets/readme-images/w3c-contact-page.png)
+#### Contact Page 
+![Contact W3C validation](assets/readme-images/w3c-contact-1902.png)
 
 N.B. The section that triggered the warning will /can be removed when contact page is styled. The form is only nested inside the section so the header and background-color match the home page. If the whole site is laid out vertically, this section will not be required. 
 
