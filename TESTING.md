@@ -16,14 +16,14 @@
 
 ### Lighthouse 
 
-#### Home Page (as of 17/02/2024)
-![Home Page Lighthouse](assets/readme-images/lighthouse-home-page-1702.png)
+#### Home Page 
+![Home Page Lighthouse](assets/readme-images/lighthouse-index-1902.png)
 
-#### About Page (as of 17/02/2024)
-![About Page Lighthouse](assets/readme-images/lighthouse-about-page-1702.png)
+#### About Page 
+![About Page Lighthouse](assets/readme-images/lighthouse-about-1902.png)
 
-#### Contact Page (as of 17/02/2024)
-![Contact Page Lighthouse](assets/readme-images/lighthouse-contact-page-1702.png)
+#### Contact Page 
+![Contact Page Lighthouse](assets/readme-images/lighthouse-contact-1902.png)
 
 ### W3C 
 
@@ -36,7 +36,6 @@
 #### Contact Page 
 ![Contact W3C validation](assets/readme-images/w3c-contact-1902.png)
 
-N.B. The section that triggered the warning will /can be removed when contact page is styled. The form is only nested inside the section so the header and background-color match the home page. If the whole site is laid out vertically, this section will not be required. 
 
 ## Manual Testing
 
