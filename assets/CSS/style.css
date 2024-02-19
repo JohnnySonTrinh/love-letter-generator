@@ -79,10 +79,8 @@ header {
     & .btn::before {
       display: inline;
       position: absolute;
-      /* transform: rotate(315deg); */
       transform: rotate(350deg);
       font-size: clamp(2rem, 3vw, 6rem);
-      /* translate: -75% -75%; */
       top: 30%;
       left: 20%;
       content: "Cupid's Quill";
