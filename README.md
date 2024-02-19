@@ -12,6 +12,7 @@ Generate your very own love letter for your loved ones! If you have someone in m
     - [Color Palette](#color-palette)
     - [Fonts](#fonts)
   - [Design](#design)
+  - [Future Implementations](#future-implementations)
   - [Project Management (Agile Development)](#project-management-agile-development)
   - [Deployment](#deployment)
   - [Technologies Used](#technologies-used)
@@ -69,6 +70,17 @@ For the body font, we used Montserrat.
 ## Design
 
 The UX design was made in Balsamiq. See the wireframes [here](assets/PDF/LoveLetterGenerator.pdf)
+
+## Future Implementations
+
+### About page
+We would like to improve the functionality of the About page.
+
+### Letter styles
+We would like to create more targeted letter styles so the user can control:
+- whether the letter is funny or serious
+- the input words fitting the letter content
+- selection from more styles for all the ways we can love!
 
 ## Project Management (Agile Development)
 
