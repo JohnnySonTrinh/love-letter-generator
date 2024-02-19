@@ -15,6 +15,11 @@
     --white: #EEFAFB;
 }
 
+::placeholder {
+  color: darkslategrey;
+  opacity: 1; /* Firefox */
+}
+
 /* General styles */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--title);
@@ -144,9 +149,10 @@ section {
  background-color: var(--light-blue);
  border-radius: 20% 0 20% 0;
  border: 0.25rem solid var(--light-pink);
- width: 80%;
+ width: min(90%, 800px);
  align-items: center;
 }
+
 
 fieldset > div, #contact-form > div {
   margin-bottom: 10px;
@@ -154,7 +160,7 @@ fieldset > div, #contact-form > div {
 
 fieldset > div > label, fieldset > label,
 fieldset > div > input, fieldset > input {
-  width: 100%
+  width: min(95%, 800px);
 }
 
 fieldset > div > button {
@@ -179,7 +185,10 @@ fieldset > div > button {
 #submit-btn {
   font-family: var(--title);
   font-size: x-large;
-  padding: 5px;
+}
+
+#loveLetterForm{
+  width:80%;
 }
 
 /* Button styling */
@@ -425,7 +434,7 @@ About Section style
 /**Footer*/
 footer {
   position: fixed;
-    z-index: 1;
+  z-index: 1;
   font-family: var(--main-font);
   font-size: 0.9rem;
   bottom: 0;
@@ -495,4 +504,21 @@ footer {
   100%{scale:1.4;}
 }
 
-  /* Contact page */
+/* Media query */
+@media screen and (max-width: 600px) {
+  .container-fluid {
+    --bs-gutter-x:0;
+  }
+  .card{
+    width: 100%;
+    border-radius:0;
+  }
+
+  #letterOutput{
+    background-color: var(--white);
+  }
+
+  #loveLetterForm{
+    width:100%;
+  }
+}
