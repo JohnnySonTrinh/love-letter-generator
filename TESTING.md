@@ -78,11 +78,24 @@ N.B. The section that triggered the warning will /can be removed when contact pa
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
+| Name input field | Allows user to input text | Input text | Allowed text input | Pass |
+| Email input field | Allows user to input text | Input text | Allowed text input | Pass |
+| Text area | Allows user to input text | Input text | Allowed text input | Pass |
+| Submit button | Will not allow user to proceed if all input fields are not complete | Clicked submit button with empty fields | User prompted to complete all fields | Pass |
+| Submit button | Allow user to submit form and displays success message | Clicked submit button with all fields complete | Form submitted and success message displayed | Pass |
+| Submit button | Sends email to user after form submission | Clicked submit button with all fields complete | Form submitted and email received | Pass |
+
 
 ### Header
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
+| Home button | Navigates back to welcome page | Clicked Home button | Welcome page loaded | Pass |
+| New Letter button | Clears completed form fields | Clicked New Letter button | All input fields cleared | Pass |
+| About button | Navigates to about page | Clicked About button | About page loaded | Pass |
+| Contact Us button | Navigates to Contact Us page | Clicked Contact us button | Contact Us page loaded | Pass | 
+
+
 
 ### Footer
 
