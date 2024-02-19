@@ -14,6 +14,7 @@ Generate your very own love letter for your loved ones.
   - [Design](#design)
   - [Project Management (Agile Development)](#project-management-agile-development)
   - [Deployment](#deployment)
+  - [Credits](#credits)
   - [Technologies Used](#technologies-used)
 
 ## Features
@@ -94,11 +95,20 @@ Back to top
 
 This page was deployed using [github pages](https://pages.github.com/)
 
+## Credits
+
+[This guide](https://www.youtube.com/watch?v=G_h2pGZcOzc) was used for the footer effect.
+
+[This Videos Series](https://www.youtube.com/watch?v=6toXMFyQdB0&list=PLc1g3vwxhg1WVhYrKP0GJlZIlSn9loyXD) was used for guidance on how to use jsPDF
+
+
 ## Technologies Used
 
 - The site was built with the framework [Bootstrap 5.3.2](https://getbootstrap.com/)
 
 - The PDF was created using [jsPDF](https://rawgit.com/MrRio/jsPDF/master/docs/index.html)
+
+- [EmailJS](https://www.emailjs.com/) Was used to have a functional contact page with no back-end
 
 - The favicon was generated with [Favicon Generator](https://favicon.io/favicon-converter/)
 
