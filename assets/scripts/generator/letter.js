@@ -35,7 +35,7 @@ window.addEventListener('load', function() {
 
 // Attach event listener to Submit and get letterType and buttonToHighLight
 document.getElementById('loveLetterForm').addEventListener('submit', (event) => {
-  event.preventDefault(); // Prevent form submission and scroll
+  event.preventDefault(); // Prevent form submission
   // Collect Letter Type
   const letterType = document.getElementById('letter-type').value;
   const buttonToHighlight = document.getElementById(letterType);
@@ -81,7 +81,7 @@ newLetter.addEventListener('click', () => {
   hideYourLetterSection();
 });
 
-function generateLoveLetter(id) {
+function generateLoveLetter(letterType) {
   // Collect user input
   const partnerName = capitalize(document.getElementById('partnerName').value.toLowerCase());
   const noun1 = document.getElementById('noun1').value.toLowerCase();
@@ -156,7 +156,7 @@ function generateLoveLetter(id) {
   const letterOutput = document.getElementById('letterOutput');
 
   // Switch statement based on letter type
-  switch(id) {
+  switch(letterType) {
     case 'Platonic':
         letterOutput.innerText = platonicLetter;
         break;
