@@ -88,6 +88,15 @@ N.B. The section that triggered the warning will /can be removed when contact pa
 
 ### About Page
 
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Card deck: hover | Deck of creator cards fan out when hovered | Hovered mouse over deck | Cards fanned out | Pass |
+| Heart button | Opens creator card deck | Clicked heart button | Creator deck opened | Pass |
+| Forward button | Scrolls forward through each creators cards | Clicked forward button | Scrolled forward through cards | Pass |
+ Back button | | Scrolls back through each creators cards | Clicked back button | Scrolled back through cards | Pass |
+ | Individual creator cards: hover | Individual creator cards fan out when hovered | Hovered mouse over deck | Individual cards fanned out | Pass |
+
+
 ### Contact Page
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
