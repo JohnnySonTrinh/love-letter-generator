@@ -299,7 +299,7 @@ function newPdf(){
 }
 
 //back button
-const back = document.getElementById("back")
+const back = document.getElementById("back");
 back.addEventListener("click", () => {
   scroll("main-section");
-})
+});
