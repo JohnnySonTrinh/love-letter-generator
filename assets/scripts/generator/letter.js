@@ -290,7 +290,6 @@ function newPdf(){
       format:"a4"
     });
     doc.addImage(background,"JPEG", 0, 0, 8.25, 11.75);
-    //doc.setFont("Montserrat-Regular", "normal")
 
     let letterSplit = doc.splitTextToSize(letter, maxWidth);
 
