@@ -65,6 +65,7 @@
         <h1>Love Letter Generator</h1>
         <form id="loveLetterForm">
           <fieldset id="type" class="input-container pt-3 d-flex flex-row justify-content-start">
+          <legend class="d-none">Letter Type</legend>
             <label for="letter-type" class="type-label">Letter Type:</label>
             <select name="letter-type" id="letter-type" class="p-1">
               <option value="Platonic">Platonic</option>
@@ -74,6 +75,7 @@
             </select>
           </fieldset>
           <fieldset id="main-form" class="input-container pt-3">
+          <legend class="d-none">User Input</legend>
             <div >
               <label class="d-none" for="partnerName">Partner's Name:</label>
               <input class="w-100" type="text" name="partnerName" id="partnerName" pattern="^[a-zA-Z\s]+$"
