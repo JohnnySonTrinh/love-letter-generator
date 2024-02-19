@@ -30,6 +30,12 @@ The site features a bright and welcoming landing page to engage the user immedia
   <img src="./assets/readme-images/Welcome.gif" alt="Welcome">
 </div>
 
+### Header
+The header shows on the Letter Generator page. It contains links to Home, New Letter, About, and Contact us. It collapses to a burger menu on smaller screens.
+
+### Footer
+The footer shows the names of all contributors and their Github links.
+
 ### Letter Generator
 
 The Love Letter Generator accepts user input and also has the option of random selection if the user can not think of the right word. There is a selection field for the style of letter the user wishes to write. All input fields are validated with regex to be letters and spaces only. Names are capitalised and all other inputs are lower case. At the bottom of the form there are two buttons, one to generate the letter and one to clear the form.
@@ -38,7 +44,7 @@ The Love Letter Generator accepts user input and also has the option of random s
   <img src="./assets/readme-images/LetterGenerator.png" alt="Letter Generator">
 </div>
 
-### PDF Download
+### Letter output & PDF download
 
 On the next page the user can view their letter output and switch letter styles if they wish. If they like the output they can keep it forever with a download option, which downloads the letter as a PDF with a themed border.
 
