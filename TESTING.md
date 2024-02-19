@@ -3,6 +3,7 @@
 * [Automated Testing](#automated-testing)
   * [Lighthouse](#lighthouse)
   * [W3C](#W3C)
+  * [JS Testing](#JS-testing)
 * [Manual Testing](#manual-testing)
   * [Welcome Page](#welcome-page)
   * [Main Form](#main-form)
@@ -35,6 +36,13 @@
 
 #### Contact Page 
 ![Contact W3C validation](assets/readme-images/w3c-contact-1902.png)
+
+### JS Testing
+
+All scripts were tested with [JS Hint](https://jshint.com/) and showed no errors.
+
+![JS testing image](assets/readme-images/js-test-1902.png)
+
 
 
 ## Manual Testing
