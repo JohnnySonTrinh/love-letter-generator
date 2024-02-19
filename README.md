@@ -47,10 +47,10 @@ On the next page the user can view their letter output and switch letter styles 
 </div>
 
 ### About Page
-The About page shows cards with information about the team contributors: Profile, LinkedIn link, things they love, and a few words about tech and love, or their love for tech!
+The About page was designed so that you can swipe to find out more about us, like a dating app. It shows cards with information about the team contributors: Profile, LinkedIn link, things they love... as well as a few words about tech and love, or their love for tech!
 
 ### Contact Page
-The Contact page has a form that sends a message to the team. It has input fields for name, email, message, and a submit button. When Submit is clicked, there is a feedback message.
+The Contact page has a form that sends a message to the Cupid team. It has input fields for name, email, message, and a submit button. When Submit is clicked, there is a feedback message.
 
 ## Surface
 
@@ -92,9 +92,9 @@ We built and tested this project in Chrome, and we would like to improve appeara
 
 We have been using [GitHub projects](https://github.com/users/lucia2007/projects/10/views/1) for organizing our project and tracking user stories/issues. It is a very helpful tool which enabled us to keep all the PBIs in one place and to tackle the issues gradually and to keep an eye on our progress.
 
-At the beginning of the project, we first spent some time on brainstorming, project planning, splitting roles and tasks, on thinking the project through. We agreed to keep it simple, to focus on the MVP and to add more complex or nice to have features if we had extra time. Creating wireframes and choosing the basic design options (fonts, color scheme) helped us get started fast. 
+At the beginning of the project, we first spent some time on brainstorming, project planning, splitting roles and tasks, and thinking the project through. We agreed to keep it simple, to focus on the MVP and to add more complex or nice-to-have features if we had extra time. Creating wireframes and choosing the basic design options (fonts, color scheme) helped us get started fast. 
 
-PBis were organized in a To Do section. Each of the items was assigned a priority and one of the MoSCoW tags. Whenever we were working on a task, we moved it into "In Progress" section and when the issue was done, we moved the card to "Done". 
+PBis were organized in a To Do section. Each of the items was assigned a priority and one of the MoSCoW tags. Whenever we were working on a task, we moved it into the "In Progress" section and when the issue was done, we moved the card to "Done". 
 
 In a longer project we would have written out detailed User stories, categorized them in Epics and Milestones and planned out our Sprints, but this was not necessary or feasible for the hackathon style project. It would have been good to assign the tasks story points to each issue to keep the complexity of the tasks in mind.
 
@@ -102,7 +102,7 @@ From the beginning we tried to update the readme and testing files, especially a
 
 As you will see from our progress, we always kept MVP in mind. At first we made sure the basic features were in place so we could start working (setting up the workplace, inviting collaborators, setting up the project board, creating the index page, adding css and js files, creating wireframes and choosing design options), then we focused on the main elements and when we had some extra time, we added some nice to have features, but always keeping in mind meeting the core project requirements first.
 
-Overall, primarily, we focused on completing majority of the must-haves, in later stages of the product development we would consider some should and could-haves. If an issue was identified as a won't have, it was moved into the respective column.
+Overall, primarily, we focused on completing the majority of the must-haves, in later stages of the product development we would consider some should and could-haves. If an issue was identified as a won't have, it was moved into the respective column.
 
 Breaking the project up into issues and essentially into tasks, assigning them to individual team members, tracking progress in Projects was very helpful and enabled us to tackle the project quickly in manageable bite-size steps.
 
@@ -134,4 +134,4 @@ This page was deployed using [github pages](https://pages.github.com/)
 
 - [This Videos Series](https://www.youtube.com/watch?v=6toXMFyQdB0&list=PLc1g3vwxhg1WVhYrKP0GJlZIlSn9loyXD) was used for guidance on how to use jsPDF
 
-- Thanks to our amazing team fo Cupid's Helpers for contributing all of their varied skills and ideas, and making this project fun and successful! 💘 Love you!!!
+- Thanks to our amazing team of Cupid's Helpers for contributing all of their varied skills and ideas, and making this project fun and successful! 💘 Love you!!!
