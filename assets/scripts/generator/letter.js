@@ -240,7 +240,6 @@ function scroll(){
 
 //scroll function and hide the Your Letter section, reset the inputs
 welcomeBtn = document.getElementById("welcome-btn");
-welcomeBtn.addEventListener("click",scroll)
 
 welcomeBtn.addEventListener('click', () => {
   scroll();
