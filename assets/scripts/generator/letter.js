@@ -1,3 +1,4 @@
+
 // Identify letter type from buttons
 const platonic = document.getElementById("Platonic")
 const romantic = document.getElementById("Romantic")
@@ -20,7 +21,7 @@ function unhideYourLetterSection(){
   letterSection.style.display ="flex";
 }
 
-// Change the letter type in the form based on the currently clicek button in "Your Letter" section
+// Change the letter type in the form based on the currently click button in "Your Letter" section
 function setNewLetterTypeValue(newLetterType){
     let letterTypeInput = document.getElementById('letter-type');
     letterTypeInput.value = newLetterType;
@@ -40,7 +41,7 @@ document.getElementById('loveLetterForm').addEventListener('submit', (event) => 
   const buttonToHighlight = document.getElementById(letterType);
   generateLoveLetter(letterType);
   highlightButton(buttonToHighlight);
-  scroll();
+  scroll("letter-section");
 });
 
 // Attach event listeners to each letter type button
@@ -235,15 +236,18 @@ function reset() {
   letterOutput.innerText = "";
 }
 
-function scroll(){
-    window.scrollBy(0,200)
+function scroll(id){
+  window.scrollTo({
+    top: document.getElementById(id).offsetTop,
+    behavior: 'smooth'
+  });
 }
 
 //scroll function and hide the Your Letter section, reset the inputs
 welcomeBtn = document.getElementById("welcome-btn");
 
 welcomeBtn.addEventListener('click', () => {
-  scroll();
+  scroll("main-section");
   reset();
   hideYourLetterSection();
 });
@@ -260,7 +264,7 @@ function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-//Dowload letter section
+//Download letter section
 const download = document.getElementById("download")
 const background = document.getElementById("pdfBg")
 
@@ -270,15 +274,14 @@ download.addEventListener("click", newPdf)
 function newPdf(){
 
     let maxWidth = 6.25
-
     let letter = document.getElementById("letterOutput").innerText
     const doc = new jsPDF({
       orientation: "p",
       unit:"in",
       format:"a4"
     });
-
     doc.addImage(background,"JPEG", 0, 0, 8.25, 11.75)
+    //doc.setFont("Montserrat-Regular", "normal")
 
     let letterSplit = doc.splitTextToSize(letter, maxWidth)
 
