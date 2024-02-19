@@ -1,3 +1,4 @@
+
 // Identify letter type from buttons
 const platonic = document.getElementById("Platonic")
 const romantic = document.getElementById("Romantic")
@@ -9,16 +10,6 @@ const clear = document.getElementById("clear-btn")
 const newLetter = document.getElementById("new-letter")
 
 const letterSection = document.getElementById("letter-section")
-
-// Hide the "Your Letter" section when no letter was generated yet
-function hideYourLetterSection(){
-  letterSection.style.display ="none";
-}
-
-// Unhide the "Your Letter" section when no letter was generated yet
-function unhideYourLetterSection(){
-  letterSection.style.display ="flex";
-}
 
 // Hide the "Your Letter" section when no letter was generated yet
 function hideYourLetterSection(){
@@ -283,15 +274,14 @@ download.addEventListener("click", newPdf)
 function newPdf(){
 
     let maxWidth = 6.25
-
     let letter = document.getElementById("letterOutput").innerText
     const doc = new jsPDF({
       orientation: "p",
       unit:"in",
       format:"a4"
     });
-
     doc.addImage(background,"JPEG", 0, 0, 8.25, 11.75)
+    //doc.setFont("Montserrat-Regular", "normal")
 
     let letterSplit = doc.splitTextToSize(letter, maxWidth)
 
