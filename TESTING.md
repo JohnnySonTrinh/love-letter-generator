@@ -3,6 +3,7 @@
 * [Automated Testing](#automated-testing)
   * [Lighthouse](#lighthouse)
   * [W3C](#W3C)
+  * [JS Testing](#JS-testing)
 * [Manual Testing](#manual-testing)
   * [Welcome Page](#welcome-page)
   * [Main Form](#main-form)
@@ -16,27 +17,33 @@
 
 ### Lighthouse 
 
-#### Home Page (as of 17/02/2024)
-![Home Page Lighthouse](assets/readme-images/lighthouse-home-page-1702.png)
+#### Home Page 
+![Home Page Lighthouse](assets/readme-images/lighthouse-index-1902.png)
 
-#### About Page (as of 17/02/2024)
-![About Page Lighthouse](assets/readme-images/lighthouse-about-page-1702.png)
+#### About Page 
+![About Page Lighthouse](assets/readme-images/lighthouse-about-1902.png)
 
-#### Contact Page (as of 17/02/2024)
-![Contact Page Lighthouse](assets/readme-images/lighthouse-contact-page-1702.png)
+#### Contact Page 
+![Contact Page Lighthouse](assets/readme-images/lighthouse-contact-1902.png)
 
 ### W3C 
 
-#### Home Page (as of 17/02/2024)
-![Home Page W3C validation](assets/readme-images/w3c-home-page.png)
+#### Home Page 
+![Home Page W3C validation](assets/readme-images/w3c-index-1902.png)
 
-#### About Page (as of 17/02/2024)
-![About W3C validation](assets/readme-images/w3c-about-page.png)
+#### About Page 
+![About W3C validation](assets/readme-images/w3c-about-1902.png)
 
-#### Contact Page (as of 17/02/2024)
-![Contact W3C validation](assets/readme-images/w3c-contact-page.png)
+#### Contact Page 
+![Contact W3C validation](assets/readme-images/w3c-contact-1902.png)
 
-N.B. The section that triggered the warning will /can be removed when contact page is styled. The form is only nested inside the section so the header and background-color match the home page. If the whole site is laid out vertically, this section will not be required. 
+### JS Testing
+
+All scripts were tested with [JS Hint](https://jshint.com/) and showed no errors.
+
+![JS testing image](assets/readme-images/js-test-1902.png)
+
+
 
 ## Manual Testing
 
@@ -66,13 +73,36 @@ N.B. The section that triggered the warning will /can be removed when contact pa
 | Generate button | Will not allow user to proceed if Partner's Name is not entered | Tried to generate letter without inputting Partner's Name | Letter not generated and prompted to input text in the blank input field | Pass |
 | Generate button | Will not allow user to proceed if Noun 1 is not entered | Tried to generate letter without inputting Noun 1| Letter not generated and prompted to input text in the blank input field | Pass |
 | Generate button | Will not allow user to proceed if Noun 2 is not entered | Tried to generate letter without inputting Noun 2| Letter not generated and prompted to input text in the blank input field | Pass |
-| Generate button | Will not allow user to proceed if Eye Color is not entered | Tried to generate letter without inputting Eye Color| Letter not generated and prompted to input text in the blank input field | Pass |
-| Generate button | Will not allow user to proceed if Adjective 1 is not entered | Tried to generate letter without inputting Adjective 1| Letter not generated and prompted to input text in the blank input field | Pass |
-| Generate button | Will not allow user to proceed if Adjective 2 is not entered | Tried to generate letter without inputting Adjective 2| Letter not generated and prompted to input text in the blank input field | Pass |
-| Generate button | Will not allow user to proceed if Your Name is not entered | Tried to generate letter without inputting Your Name| Letter not generated and prompted to input text in the blank input field | Pass |
+| Generate button | Will not allow user to proceed if Eye Color is not entered | Tried to generate letter without inputting Eye Color | Letter not generated and prompted to input text in the blank input field | Pass |
+| Generate button | Will not allow user to proceed if Adjective 1 is not entered | Tried to generate letter without inputting Adjective 1 | Letter not generated and prompted to input text in the blank input field | Pass |
+| Generate button | Will not allow user to proceed if Adjective 2 is not entered | Tried to generate letter without inputting Adjective 2 | Letter not generated and prompted to input text in the blank input field | Pass |
+| Generate button | Will not allow user to proceed if Your Name is not entered | Tried to generate letter without inputting Your Name | Letter not generated and prompted to input text in the blank input field | Pass |
+| Clear button | Resets all form fields | Clicked clear button | All form fields were reset | Pass
+
+### Letter section 
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Platonic button | Displays the platonic letter template, including user input | Clicked Platonic button | Platonic template displayed correctly | Pass |
+| Romantic button | Displays the romantic letter template, including user input | Clicked Romantic button | Romantic template displayed correctly | Pass |
+| Monogamous button | Displays the monogamous letter template, including user input | Clicked Monogamous button | Monogamous template displayed correctly | Pass |
+| Polyamorous button | Displays the polyamorous letter template, including user input | Clicked Polyamorous button | Polyamorous template displayed correctly | Pass |
+| Download button - Platonic Letter | Downloads correct letter type | Clicked download button | Correct letter type downloaded | Pass |
+| Download button - Romantic Letter | Downloads correct letter type | Clicked download button | Correct letter type downloaded | Pass |
+| Download button - Monogamous Letter | Downloads correct letter type | Clicked download button | Correct letter type downloaded | Pass |
+| Download button - Polyamorous Letter | Downloads correct letter type | Clicked download button | Correct letter type downloaded | Pass |
 
 
 ### About Page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Card deck: hover | Deck of creator cards fan out when hovered | Hovered mouse over deck | Cards fanned out | Pass |
+| Heart button | Opens creator card deck | Clicked heart button | Creator deck opened | Pass |
+| Forward button | Scrolls forward through each creators cards | Clicked forward button | Scrolled forward through cards | Pass |
+ Back button | | Scrolls back through each creators cards | Clicked back button | Scrolled back through cards | Pass |
+ | Individual creator cards: hover | Individual creator cards fan out when hovered | Hovered mouse over deck | Individual cards fanned out | Pass |
+
 
 ### Contact Page
 

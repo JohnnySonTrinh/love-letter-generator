@@ -29,12 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
 profilePictures = ['profilePicture1.png', 'profilePicture2.png', 'profilePicture3.png', 'profilePicture4.png', 'profilePicture5.png', 'profilePicture6.png'];
 loveLetters = ['loveLetter1.png', 'loveLetter2.png', 'loveLetter3.png', 'loveLetter4.png', 'loveLetter5.png', 'loveLetter6.png'];
 loveStuffs = ['loveStuff1.png', 'loveStuff2.png', 'loveStuff3.png', 'loveStuff4.png', 'loveStuff5.png', 'loveStuff6.png'];
 aboutCards = ['aboutCard1.png', 'aboutCard2.png', 'aboutCard3.png', 'aboutCard4.png', 'aboutCard5.png', 'aboutCard6.png'];
-
 
 document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0; // Starting index for the images

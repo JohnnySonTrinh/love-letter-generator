@@ -78,10 +78,8 @@ header {
     & .btn::before {
       display: inline;
       position: absolute;
-      /* transform: rotate(315deg); */
       transform: rotate(350deg);
       font-size: clamp(2rem, 3vw, 6rem);
-      /* translate: -75% -75%; */
       top: 30%;
       left: 20%;
       content: "Cupid's Quill";
@@ -196,7 +194,7 @@ fieldset > div > button {
   padding: 10%;
 }
 
-#generate-btn, #clear-btn, #download,
+#generate-btn, #clear-btn, #download, #back,
 #submit-btn {
   font-family: var(--title);
   font-size: x-large;
@@ -530,10 +528,6 @@ footer {
   .card{
     width: 100%;
     border-radius:0;
-  }
-
-  #letterOutput{
-    background-color: var(--white);
   }
 
   #loveLetterForm{

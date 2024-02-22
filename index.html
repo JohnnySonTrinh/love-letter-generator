@@ -22,12 +22,14 @@
 <body>
   <!-- welcome section -->
   <section id="welcome-section" class="welcome">
+    <h1 class="sr-only d-none">Welcome</h1>
     <video class="video-container" muted autoplay loop>
       <source src="./assets/images/heart-bg.mp4" type="video/mp4">
     </video>
     <button type="submit" id="welcome-btn" class="btn">Welcome</button>
   </section>
 
+  <!--Main-->
   <section id="main-section" class="main">
     <header>
       <!--Navbar-->
@@ -57,12 +59,13 @@
         </div>
       </nav>
     </header>
-    <!--Main-->
+    <!--Love Letter Generator-->
     <div class="container-fluid d-flex flex-column align-items-center justify-content-center pb-3 pt-3 vh-100">
       <div class="card p-2 p-md-5">
         <h1>Love Letter Generator</h1>
         <form id="loveLetterForm">
           <fieldset id="type" class="input-container pt-3 d-flex flex-row justify-content-start">
+          <legend class="d-none">Letter Type</legend>
             <label for="letter-type" class="type-label">Letter Type:</label>
             <select name="letter-type" id="letter-type" class="p-1">
               <option value="Platonic">Platonic</option>
@@ -72,6 +75,7 @@
             </select>
           </fieldset>
           <fieldset id="main-form" class="input-container pt-3">
+          <legend class="d-none">User Input</legend>
             <div >
               <label class="d-none" for="partnerName">Partner's Name:</label>
               <input class="w-100" type="text" name="partnerName" id="partnerName" pattern="^[a-zA-Z\s]+$"
@@ -134,7 +138,10 @@
         <h2>Your Letter...</h2>
         <div id="letterOutput" class="rounded p-1">
         </div>
-        <button id="download" class="btn mt-1" type="submit">Download</button>
+        <div class="d-flex text-center">
+        <button id="download" class="btn mt-1 px-1" type="submit">Download</button>
+        <button id="back" class="btn mt-1 mx-1">Back</button>
+        </div>
       </div>
       <img alt="pdf background" id="pdfBg" class="d-none" src="assets/images/pdf_bg.jpg">
     </section>
