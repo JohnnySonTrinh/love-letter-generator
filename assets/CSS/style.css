@@ -325,29 +325,38 @@ About Section style
   transform: translateX(5%) rotate(3deg);
 }
 
+.big-card:nth-child(6) {
+  background: url(../images/profilePicture6.png) center/cover no-repeat;
+  transform: translateX(10%) rotate(-1deg);
+}
+
 /* Hover effect Team */  
 .card-team:hover > .card {  
   box-shadow: -1rem 0.5rem 2rem rgba(0, 0, 0, 0.4);
 }
 
 .card-team:hover > .big-card:nth-child(1) {
-  transform: translate(-75%, 16%) rotate(-24deg);
+  transform: translate(-65%, 20%) rotate(-24deg);
 }
 
 .card-team:hover > .big-card:nth-child(2) {
-  transform: translate(-50%, 12%) rotate(-16deg);
+  transform: translate(-45%, 14%) rotate(-18deg);
 }
 
 .card-team:hover > .big-card:nth-child(3) {
-  transform: translate(0%, 8%) rotate(0deg);
+  transform: translate(-15%, 10%) rotate(-8deg);
 }
 
 .card-team:hover > .big-card:nth-child(4) {
-  transform: translate(50%, 12%) rotate(16deg);
+  transform: translate(15%, 14%) rotate(8deg);
 }
 
 .card-team:hover > .big-card:nth-child(5) {
-  transform: translate(75%, 16%) rotate(24deg);
+  transform: translate(45%, 20%) rotate(18deg);
+}
+
+.card-team:hover > .big-card:nth-child(6) {
+  transform: translate(65%, 26%) rotate(24deg);
 }
 
 /* Hover effect Swipe */
