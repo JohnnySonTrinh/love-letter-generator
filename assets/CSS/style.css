@@ -301,27 +301,27 @@ About Section style
 }
 
 .big-card:nth-child(1) {
-  background: url(../images/picturePicture1.png) center/cover no-repeat;
+  background: url(../images/profilePicture1.png) center/cover no-repeat;
   transform: translateX(-10%) rotate(-1deg);
 }
 
 .big-card:nth-child(2) {
-  background: url(../images/picturePicture2.png) center/cover no-repeat;
+  background: url(../images/profilePicture2.png) center/cover no-repeat;
   transform: rotate(2deg);
 }
 
 .big-card:nth-child(3) {
-  background: url(../images/picturePicture3.png) center/cover no-repeat;
+  background: url(../images/profilePicture3.png) center/cover no-repeat;
   transform: translateX(-6%) rotate(-3deg);
 }
 
 .big-card:nth-child(4) {
-  background: url(../images/picturePicture4.png) center/cover no-repeat;
+  background: url(../images/profilePicture4.png) center/cover no-repeat;
   transform: translate(10%, 3%) rotate(5deg);
 }
 
 .big-card:nth-child(5) {
-  background: url(../images/picturePicture5.png) center/cover no-repeat;
+  background: url(../images/profilePicture5.png) center/cover no-repeat;
   transform: translateX(5%) rotate(3deg);
 }
 
