@@ -9,7 +9,7 @@ const last = {
 };
 
 const config = {
-  starAnimationDuration: 250,
+  starAnimationDuration: 1500,
   minimumTimeBetweenStars: 250,
   minimumDistanceBetweenStars: 75,
   glowDuration: 75,
